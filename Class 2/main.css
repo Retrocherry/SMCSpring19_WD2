@@ -4,6 +4,9 @@
 @media (min-width:768px){
     .container{
         background-color: dodgerblue;
-
+    }
+@media (min-width:992px){
+    .container{
+                background-color: magenta;
     }
 }
