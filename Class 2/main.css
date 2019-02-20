@@ -7,6 +7,37 @@ body {
     width: 100%;
     height: 222px;
 }    
+
+nav.navbar{
+    background-color: darkseagreen;
+    width: 100%;
+    padding: 10px 0x;
+    
+}
+
+nav.navbar li{
+    border-bottom: 2px solid darkred;
+}
+nav.navbar li:last-child {
+    border-bottom: 0px none;
+}
+nav.navbar a {
+    font-size: 22px;
+    line-height: 36px;
+    text-decoration: none;
+    color:darkred;
+
+}
+
+nav.navbar ul{
+    list-style: none;
+    padding-left: 0px;
+    margin:0px;
+    text-align:center;
+}
+
+
+
 @media (min-width:768px){
     .container{
         background-color: dodgerblue;
@@ -16,6 +47,7 @@ body {
     }
 @media (min-width:992px){
     .container{
+                width
                 background-color: plum;
     }
 }
