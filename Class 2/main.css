@@ -9,45 +9,86 @@ body {
 }    
 
 nav.navbar{
-    background-color: darkseagreen;
+    background-color: orangered;
     width: 100%;
     padding: 10px 0x;
+    min-height: 70px;
     
 }
 
-nav.navbar li{
-    border-bottom: 2px solid darkred;
-}
-nav.navbar li:last-child {
-    border-bottom: 0px none;
-}
-nav.navbar a {
-    font-size: 22px;
+nav.navbar a { 
+    font-size: 24px;
     line-height: 36px;
     text-decoration: none;
-    color:darkred;
+    color:black;
 
 }
 
+/*FOR WHEN IT IS SMALL, MOBILE*/
 nav.navbar ul{
-    list-style: none;
+    line-height: 20px; /* same as height! */
     padding-left: 0px;
-    margin:0px;
-    text-align:center;
+    margin: 0px;
+    text-align: center;
+    color:black;
+}
+
+nav.navbar li{
+    border-bottom: 2px solid white;
+    display: inline-block;
+    
+}
+
+nav.navbar li a {
+    color: white;
 }
 
 
+/* nav.navbar li:last-child {
+  border-bottom: none;
+} */
+/*only selects the last child of  li*/
 
+
+/*when screen is smaller than*/
 @media (min-width:768px){
     .container{
         background-color: dodgerblue;
         width: 750px;
         margin: 0px auto;
-        min-height: 300px;
+        min-height: 300px'
+
     }
-@media (min-width:992px){
-    .container{
-                width
-                background-color: plum;
+
+
+    nav.navbar ul{
+        list-style: none();
+        padding-left: 0px;
+        margin: 0px;
+        color:whitesmoke;
+    }
+    
+    nav.navbar{
+        background-color: orangered;
+        width: 100%;
+        margin: 0px auto;
+        min-height: 90px;
     }
 }
+
+@media (min-width:992px){
+    .container{
+        width: 100%;
+        background-color: goldenrod;
+    }
+
+   
+nav.navbar ul{
+    
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    text-align: center;
+}
+}
+   
