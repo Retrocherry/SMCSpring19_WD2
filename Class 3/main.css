@@ -1,0 +1,104 @@
+.container {
+    background-color: oldlace;
+}
+
+.red{
+    background-color: lightcoral;
+}
+
+.green{
+    background-color: lightgreen;
+}
+
+.blue{
+    background-color: lightskyblue;
+}
+.yellow{
+    background-color: yellow;
+}
+.cyan{
+    background-color: darkturquoise;
+}
+.purple{
+    background-color: purple;
+}
+
+/* once we start moving onto to larger screen sizes... */
+
+.floater-section{
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+
+}
+
+.clearfix{
+    clear: both;
+}
+
+/**********SMALL  SCREEN****************/
+@media (min-width: 450px){
+    
+    }
+    .small-width-25{
+        width: 25%;
+    }
+    .small-width-33{
+        width: 33.333%;
+    }
+    .small-width-50{
+        width: 50%;
+    }
+    .small-width-100{
+        width: 100%;
+    }
+
+/**********MEDIUM  SCREEN****************/
+@media (min-width: 768px){
+    
+    .med.width-25{
+        width: 25%;
+    }
+    .med-width-33{
+        width: 33.3333%;
+    }
+    .med-width-50{
+        width: 50%;
+    }
+    .med-width-100 {
+        width: 100%;
+    }
+
+    
+}
+/**********LARGE  SCREEN****************/
+@media (min-width: 992px){
+    .large-width-25{
+        width: 25%;
+    }
+    .large-width-33{
+        width: 33.3333%;
+    }
+    .large-width-50{
+        width: 50%;
+    }
+    .large-width-100 {
+        width: 100%;
+    }
+    nav.navbar ul{
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 50px;
+        margin: 0px;
+        /* glyph-orientation-horizontal: 50%;  */
+        text-align: right;
+    }
+    .container{
+        width: 100%;
+        /* background-color: hsla(219, 76%, 52%, .9); */
+       
+        
+        }
+    
+}

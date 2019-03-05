@@ -14,7 +14,7 @@ nav.navbar{
     
 }
 nav.navbar #logo img {
-    width: 300px;;
+    width: 300px;
 }
 
 nav.navbar a { 
@@ -22,11 +22,6 @@ nav.navbar a {
     line-height: 36px;
     text-decoration: none;
     color:black;
-
-
-
-    
-
 }
 
 /*FOR WHEN IT IS SMALL, MOBILE*/
