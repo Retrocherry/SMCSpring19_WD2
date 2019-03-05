@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+
+
+
 body {
     margin: 0px;
 
-    font-family: 'Plex', sans-serif;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
 
 /* Controls the main navbar but @media will override this (for breakpoints)  */
@@ -22,11 +26,13 @@ nav.navbar #logo img {
     margin-left: 20px;
 }
 
-nav.navbar a { 
+nav.navbar ul li a { 
     font-size: 24px;
     line-height: 36px;
     text-decoration: none;
-    color:black;
+    color: #B52224;
+    padding: 20px;
+
 }
 
 /*FOR WHEN IT IS SMALL, MOBILE*/
@@ -55,6 +61,10 @@ nav.navbar li a {
     width: 100%;
     /* height: 222px; */
 }    
+
+.info-image {
+    width: 100%;
+}
 
 
 .container {
@@ -87,13 +97,18 @@ nav.navbar li a {
 .floater-section{
     float: left;
     width: 100%;
-    min-height: 200px;
+    height: 300px;
     margin-bottom: 20px;
 
 }
 
 .clearfix{
     clear: both;
+}
+
+
+footer {
+    margin-top: 100px;
 }
 
 /**********SMALL  SCREEN****************/
