@@ -19,6 +19,7 @@ nav.navbar{
 }
 nav.navbar{
     background-image: linear-gradient(red, yellow);
+    
   }
   
 nav.navbar #logo img {
@@ -29,11 +30,33 @@ nav.navbar #logo img {
 nav.navbar ul li a { 
     font-size: 24px;
     line-height: 36px;
-    text-decoration: none;
-    color: #B52224;
-    padding: 20px;
+    /* padding: 10px; */ 
+    /* PADDING MAKES THIS NOT WORK */
 
 }
+
+    a:link {
+        text-decoration:none;
+        color: white;
+    }
+    a:visited {
+        text-decoration:none;
+        color:cyan;
+    }
+    a:hover {
+        color:#ffffff; 
+        background-color:#f1f1f1;
+    }
+    a:active {
+        color:greenyellow; 
+        background-color:#E38F27;
+    }
+    .active-link {
+        color: black;
+        background-color:#E38F27;
+    } 
+    
+    
 
 /*FOR WHEN IT IS SMALL, MOBILE*/
 nav.navbar ul{
@@ -57,7 +80,7 @@ nav.navbar li a {
 
 /* Controls the main container */
 .container {
-    background-color: salmon;
+    background-color: red;
     width: 100%;
     /* height: 222px; */
 }    
@@ -67,29 +90,33 @@ nav.navbar li a {
 }
 
 
+
+
+
+
 .container {
-    background-color: oldlace;
+    background-color: #B52224;
 }
 
 .red{
-    background-color: lightcoral;
+    background-color: #B52224;
 }
 
-.green{
-    background-color: lightgreen;
+.orange{
+    background-color: #E38F27;
 }
 
 .blue{
-    background-color: lightskyblue;
+    background-color: #79BAD8;
 }
 .yellow{
-    background-color: yellow;
+    background-color: #FCDA31;
 }
 .cyan{
-    background-color: darkturquoise;
+    background-color: cyan;
 }
 .purple{
-    background-color: purple;
+    background-color: yellow;
 }
 
 /* once we start moving onto to larger screen sizes... */
@@ -126,7 +153,11 @@ footer {
     }
     .small-width-100{
         width: 100%;
+
     }
+       
+        
+    
 
 /**********MEDIUM  SCREEN****************/
 @media (min-width: 768px){
