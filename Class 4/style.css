@@ -1,0 +1,40 @@
+
+
+.content{
+    padding: 0px 10px;
+    min-height: 572px;
+    border-bottom: 2px solid darkorchid;
+    position: relative;
+
+    /* The margins and padding share this system of shortcuts where you can use any number of values between 2 and 4.  */
+}
+
+.content .img-container {
+    min-height: 160px;
+}
+.content img{
+    max-width: 100%;
+}
+
+.content .abs-pos{
+    position: absolute;
+}
+
+#jkrOverlap{
+    top: 30x;
+}
+
+#jkrTitle {
+    top: 200px;
+    right: 30px;
+    color:whitesmoke;
+    text-shadow: 1px 0px 4px #e34344;
+    /* one off case, this is when we use ids. We would use a class as a rule bc they can be applied to multiple things */
+}
+
+
+
+
+
+    
+
