@@ -1,5 +1,7 @@
 
 
+
+
 .content{
     padding: 0px 10px;
     min-height: 572px;
@@ -28,6 +30,8 @@
     top: 200px;
     right: 30px;
     color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
     text-shadow: 1px 0px 4px #e34344;
     /* one off case, this is when we use ids. We would use a class as a rule bc they can be applied to multiple things */
 }
