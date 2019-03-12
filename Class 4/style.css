@@ -7,7 +7,7 @@ nav.navbar{
     
 }
 nav.navbar{
-    background-image: linear-gradient(#222222, #494949);
+    background-image: linear-gradient(#494949, #222222);
 
 }
   
@@ -24,6 +24,7 @@ nav.navbar ul {
     display: inline-block;
     position: absolute;
     top: 20%;
+    
 }
 
 nav.navbar li { 
@@ -36,11 +37,16 @@ nav.navbar ul li a {
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     color: white;
-
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+ 
 }
 
 nav.navbar ul li a.active-link {
-    color: green;
+    color: #3483f1;
+    border-bottom: 3px solid #3483f1;
+
 }
 
 
@@ -81,15 +87,37 @@ nav.navbar ul li a.active-link {
     /* one off case, this is when we use ids. We would use a class as a rule bc they can be applied to multiple things */
 }
 
+.page-header{
+    color: #3483f1;;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 10px;
+    top: 10px;
+    margin: 0px;
+
+}
+
+
 .image-header{
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
-    font-size: 15pt;
-    text-shadow: 1px 0px 4px #e34344;
+    font-size: 16pt;
+    text-shadow: 1px 0px 4px black;
     position: absolute;
     top: 10px;
     margin: 0px;
     /* removed it from the don flow but it still shows - does not affect any other elements. We must put it inside the picture's container. Next make it so that it is relative to its parent container */
+}
+.sub-header{
+    color: rgb(24, 24, 31);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+.body-text{
+    color: rgb(24, 24, 31);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+
 }
 
 
