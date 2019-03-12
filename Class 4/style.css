@@ -1,5 +1,47 @@
+/* NAVBAR*/
+nav.navbar{
+    width: 100%;
+    /* padding: 20px 0px; */
+    min-height: 10px;
+    position: relative;
+    
+}
+nav.navbar{
+    background-image: linear-gradient(#222222, #494949);
 
+}
+  
+nav.navbar #logo img {
+    width: 100px;
+    margin-left: 30px;
+}
 
+nav.navbar #logo {
+    display: inline-block;
+}
+
+nav.navbar ul {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+}
+
+nav.navbar li { 
+    display: inline-block;
+}
+
+nav.navbar ul li a { 
+    font-size: 24px;
+    line-height: 36px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+nav.navbar ul li a.active-link {
+    color: green;
+}
 
 
 .content{
@@ -11,8 +53,11 @@
     /* The margins and padding share this system of shortcuts where you can use any number of values between 2 and 4.  */
 }
 
+
 .content .img-container {
     min-height: 160px;
+    position: relative;
+    /* we want this title position to sit against this relative container */
 }
 .content img{
     max-width: 100%;
@@ -34,6 +79,17 @@
     font-size: 15pt;
     text-shadow: 1px 0px 4px #e34344;
     /* one off case, this is when we use ids. We would use a class as a rule bc they can be applied to multiple things */
+}
+
+.image-header{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    text-shadow: 1px 0px 4px #e34344;
+    position: absolute;
+    top: 10px;
+    margin: 0px;
+    /* removed it from the don flow but it still shows - does not affect any other elements. We must put it inside the picture's container. Next make it so that it is relative to its parent container */
 }
 
 
