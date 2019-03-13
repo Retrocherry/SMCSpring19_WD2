@@ -1,0 +1,70 @@
+.container {
+    background-color: #B52224;
+}
+
+.red{
+    background-color: #B52224;
+}
+
+.orange{
+    background-color: #E38F27;
+}
+
+.blue{
+    background-color: #79BAD8;
+}
+.yellow{
+    background-color: #FCDA31;
+}
+.cyan{
+    background-color: cyan;
+}
+.purple{
+    background-color: yellow;
+}
+
+.content{
+    height: 00px; 
+}
+
+#verticalCenter1{
+    position: relative;
+    height: 200px;
+}
+
+#vertCenter1{
+    position: absolute;
+    height: 100px; 
+    /* becuase we need to calculate the margin */
+    margin-top: -50px;
+    top: 50%;
+    display: block;
+}
+
+#Lorem1{
+    position: absolute;
+    top: 50%;
+
+}
+
+#vertHorizCenter1 h2{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+
+    margin-left: -129px;
+    width: 258px;
+
+    height: 28px;
+    margin-top: -44px;
+
+    background-color: beige;
+}
+
+#vertHorizCenter2 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+
+}
