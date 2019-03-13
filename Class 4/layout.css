@@ -1,6 +1,7 @@
 .container {
     margin: auto;
-    background-color: lemonchiffon;
+    background-color: #f6f6f6;
+    size: 75%;
 }
 
 .floater-section {

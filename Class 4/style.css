@@ -18,13 +18,14 @@ nav.navbar #logo img {
 
 nav.navbar #logo {
     display: inline-block;
+    
 }
 
 nav.navbar ul {
     display: inline-block;
     position: absolute;
     top: 20%;
-    
+    right: 30px;
 }
 
 nav.navbar li { 
@@ -53,7 +54,7 @@ nav.navbar ul li a.active-link {
 .content{
     padding: 0px 10px;
     min-height: 572px;
-    border-bottom: 2px solid darkorchid;
+    border-bottom: 2px solid gray;
     position: relative;
 
     /* The margins and padding share this system of shortcuts where you can use any number of values between 2 and 4.  */
@@ -91,12 +92,17 @@ nav.navbar ul li a.active-link {
     color: #3483f1;;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    margin: 10px;
+    /* margin: 10px; */
     top: 10px;
     margin: 0px;
 
 }
 
+.sub-header{
+    color: rgb(24, 24, 31);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
 
 .image-header{
     color: whitesmoke;
@@ -108,18 +114,20 @@ nav.navbar ul li a.active-link {
     margin: 0px;
     /* removed it from the don flow but it still shows - does not affect any other elements. We must put it inside the picture's container. Next make it so that it is relative to its parent container */
 }
-.sub-header{
-    color: rgb(24, 24, 31);
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-}
+
 .body-text{
     color: rgb(24, 24, 31);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-
 }
 
+.learn-more{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: red;
+    padding: 5px;
+}
 
 
 
