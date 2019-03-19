@@ -23,48 +23,75 @@
     background-color: yellow;
 }
 
-.content{
-    height: 00px; 
+.green{
+    background-color: #004225;
 }
 
-#verticalCenter1{
+
+.content{
+    height: 200px; 
+    
     position: relative;
-    height: 200px;
+}
+
+#vertCenter1 p { 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    display: inline;
 }
 
 #vertCenter1{
-    position: absolute;
-    height: 100px; 
-    /* becuase we need to calculate the margin */
-    margin-top: -50px;
-    top: 50%;
+    display: table;
+    height: 250px;
+    background: white;
+    width: 240px;
+    margin: 20px;
+}
+
+
+#vertCenter1{
+    position: relative;
+    /* height: 100px; 
+    /* cuz we need to calculate the margin!!!!!!!!!!!!! */
+    /* margin-top: -50px;
+    top: 50%; */
     display: block;
 }
 
 #Lorem1{
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
-
 }
 
 #vertHorizCenter1 h2{
-    position: absolute;
-    top: 50%;
-    left: 50px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50px; */
 
-    margin-left: -129px;
-    width: 258px;
+    /* margin-left: -129px;
+    width: 258px; */
 
-    height: 28px;
-    margin-top: -44px;
+    /* height: 28px;
+    margin-top: -44px; */
+        
 
     background-color: beige;
 }
 
-#vertHorizCenter2 p {
+#vertCenrer2 {
+    
+}
+
+#vertCenter2 p {
     position: absolute;
     top: 50%;
-    left: 50%;
-    
+}
 
+
+.body-text {
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: black;
+    font-size: 16px;
 }
