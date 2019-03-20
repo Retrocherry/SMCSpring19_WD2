@@ -34,61 +34,75 @@
     position: relative;
 }
 
-#vertCenter1 p { 
+#vertCenter1 {
+    background-color: gray;
+    display: table;
+    background: white;
+    margin: auto;
+}
+
+#vertCenter1 p {
+    display: table-cell;
+    margin: 0;
+    background: black;
+    color: white;
+    vertical-align: middle;
+  }
+
+#vertCenter2 {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+#vertCenter2  p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    height: 100px;
+    background-color: orange;
     margin: 0;
-    display: inline;
 }
 
-#vertCenter1{
-    display: table;
-    height: 250px;
-    background: white;
-    width: 240px;
-    margin: 20px;
-}
-
-
-#vertCenter1{
+#vertHorizCenter1 {
+    background-color: blue;
+    color: white;
     position: relative;
-    /* height: 100px; 
-    /* cuz we need to calculate the margin!!!!!!!!!!!!! */
-    /* margin-top: -50px;
-    top: 50%; */
-    display: block;
 }
 
-#Lorem1{
-    /* position: absolute; */
-    top: 50%;
+#vertHorizCenter1 img {
+    width: 100px;
+  height: 100px;
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin: -70px 0 0 -70px;
 }
 
-#vertHorizCenter1 h2{
-    /* position: absolute; */
-    /* top: 50%;
-    left: 50px; */
-
-    /* margin-left: -129px;
-    width: 258px; */
-
-    /* height: 28px;
-    margin-top: -44px; */
-        
-
-    background-color: beige;
+#vertHorizCenter2 {
+    background-color: green;
+    position: relative;
 }
-
-#vertCenrer2 {
-    
-}
-
-#vertCenter2 p {
+#vertHorizCenter2 img {
     position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+/* NOW IT IS THE BASIC STYLE BELOW */
+
+.img-header{
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+}
 
 .body-text {
     font-family: 'ZCOOL XiaoWei', serif;
