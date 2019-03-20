@@ -3,7 +3,7 @@
 }
 
 .red{
-    background-color: #B52224;
+    background-color: coral;
 }
 
 .orange{
@@ -24,7 +24,7 @@
 }
 
 .green{
-    background-color: #004225;
+    background-color: coral;
 }
 
 
@@ -44,13 +44,13 @@
 #vertCenter1 p {
     display: table-cell;
     margin: 0;
-    background: black;
+    background: darkred;
     color: white;
     vertical-align: middle;
   }
 
 #vertCenter2 {
-    background-color: black;
+    background-color: coral;
     color: white;
     position: relative;
 }
@@ -65,27 +65,30 @@
 }
 
 #vertHorizCenter1 {
-    background-color: blue;
+    background-color: navy;
     color: white;
     position: relative;
 }
 
 #vertHorizCenter1 img {
     width: 100px;
-  height: 100px;
-  padding: 20px;
+    height: 100px;
+    padding: 20px;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-  margin: -70px 0 0 -70px;
+    margin: -70px 0 0 -70px;
 }
 
 #vertHorizCenter2 {
-    background-color: green;
+    background-image:  url("images/background.jpg");
     position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
+
 #vertHorizCenter2 img {
     position: absolute;
     top: 50%;
@@ -100,12 +103,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
    
 }
 
 .body-text {
     font-family: 'ZCOOL XiaoWei', serif;
-    color: black;
+    color: white;
     font-size: 16px;
 }
