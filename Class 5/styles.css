@@ -7,20 +7,20 @@
 }
 
 .orange{
-    background-color: #E38F27;
+    background-color: #ef855b;
 }
 
 .blue{
     background-color: #79BAD8;
 }
 .yellow{
-    background-color: #FCDA31;
+    background-color:#ef855b;
 }
 .cyan{
     background-color: cyan;
 }
 .purple{
-    background-color: yellow;
+    background-color: #ef855b;
 }
 
 .green{
@@ -110,4 +110,5 @@
     font-family: 'ZCOOL XiaoWei', serif;
     color: white;
     font-size: 16px;
+    text-shadow: 2px 2px 4px #000000;
 }
