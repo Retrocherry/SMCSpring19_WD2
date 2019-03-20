@@ -1,5 +1,5 @@
 .container {
-    background-color: #B52224;
+    /* background-color: rgb(216, 191, 191); */
 }
 
 .red{
@@ -79,11 +79,12 @@
     top: 50%;
     left: 50%;
 
-    margin: -70px 0 0 -70px;
+    margin: -70px 0 0 -70px; 
+    /* first is negative, 0,0, top */
 }
 
 #vertHorizCenter2 {
-    background-image:  url("images/background.jpg");
+    background-image: url("images/background.jpg");
     position: relative;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -102,8 +103,12 @@
     width: 200px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
    
+}
+
+.background-img{
+    background-image: repeat;
 }
 
 .body-text {
