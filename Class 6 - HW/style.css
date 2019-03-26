@@ -47,17 +47,12 @@
 
 
 
-
-
-
-
-
-
 body {
     padding: 0px;
     margin: 0px;
 }
-/* NAVBAR*/
+
+/* -------------NAVBAR-------------------*/
 nav.navbar{
     width: 100%;
     /* padding: 20px 0px; */
@@ -95,7 +90,7 @@ nav.navbar #small-logo {
 .hamburger {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0;
 }
 
@@ -122,7 +117,7 @@ nav.navbar ul li a.active-link {
 }
 
 
-
+/* --------------CONTENT------------------- */
 
 .content{
     padding: 0px 0px;
@@ -153,6 +148,12 @@ nav.navbar ul li a.active-link {
 
 
 
+
+
+
+/*---------- TYPOGRAPHY---------- */
+
+
 .page-header{
     color: #3483f1;;
     font-family: 'bitter', normal;
@@ -162,7 +163,6 @@ nav.navbar ul li a.active-link {
     margin: 0px;
 
 }
-
 .sub-header{
     color: rgb(24, 24, 31);
     font-family: 'bitter', normal;
@@ -178,7 +178,11 @@ nav.navbar ul li a.active-link {
     /* removed it from the don flow but it still shows - does not affect any other elements. We must put it inside the picture's container. Next make it so that it is relative to its parent container */
 }
 
-
+#center{
+    text-align: center;
+    font-family: 'bitter', normal;
+    font-size: 16pt;
+}
 .body-text{
     color: rgb(24, 24, 31);
     font-family: 'bitter', normal;

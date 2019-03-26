@@ -67,8 +67,8 @@ nav.navbar ul {
         position: absolute;
         top: 20%;
         right: 30px;
-        
     }
+
     #big-logo{ 
         display: none; }
 
@@ -77,6 +77,9 @@ nav.navbar ul {
     }
 
     #navbar_small {
+        display: inline-block;
+    }
+    nav.navbar ul {
         display: none;
     }
 
@@ -131,9 +134,12 @@ nav.navbar ul {
     #small-logo { 
         display: none; 
     }
-
-
-
+    #navbar_small {
+        display: none ;
+    }
+    nav.navbar ul {
+        display: inline-block;
+    }
 
     .med-width-25 {
         width: 25%;
