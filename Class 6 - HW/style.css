@@ -61,21 +61,33 @@ body {
 nav.navbar{
     width: 100%;
     /* padding: 20px 0px; */
-    min-height: 10px;
+    min-height: 40px;
+    height: 80px;
     position: relative;
+    color: #e5a946;
     
 }
 nav.navbar{
-   color: #e5a946;
+   background-color: #e5a946;
 
 }
   
-nav.navbar #logo img {
-    width: 100px;
-    margin-left: 30px;
+nav.navbar #big-logo img {
+    width: 400px;
+    margin-left: 25px;
 }
 
-nav.navbar #logo {
+nav.navbar #big-logo {
+    display: inline-block;
+    
+}
+
+nav.navbar #small-logo img {
+    width: 400px;
+    margin-left: 25px;
+}
+
+nav.navbar #small-logo {
     display: inline-block;
     
 }
@@ -95,7 +107,7 @@ nav.navbar ul li a {
     font-size: 24px;
     line-height: 36px;
     padding: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'bitter', normal;
     color: white;
     list-style-type: none;
     text-decoration: none;
@@ -104,8 +116,8 @@ nav.navbar ul li a {
 }
 
 nav.navbar ul li a.active-link {
-    color: #3483f1;
-    border-bottom: 3px solid #3483f1;
+    color: black;
+    border-bottom: 3px solid red;
 
 }
 
@@ -115,7 +127,7 @@ nav.navbar ul li a.active-link {
 .content{
     padding: 0px 0px;
     min-height: 572px;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid white;
     position: relative;
 
 
@@ -143,7 +155,7 @@ nav.navbar ul li a.active-link {
 
 .page-header{
     color: #3483f1;;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'bitter', normal;
     font-size: 40px;
     /* margin: 10px; */
     top: 10px;
@@ -153,13 +165,13 @@ nav.navbar ul li a.active-link {
 
 .sub-header{
     color: rgb(24, 24, 31);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'bitter', normal;
     font-size: 30px;
 }
 
 .image-header{
     color: whitesmoke;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'bitter', normal;
     font-size: 16pt;
     text-shadow: 1px 0px 4px black;
     margin: 0px;
@@ -169,7 +181,7 @@ nav.navbar ul li a.active-link {
 
 .body-text{
     color: rgb(24, 24, 31);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'bitter', normal;
     font-size: 16px;
 }
 

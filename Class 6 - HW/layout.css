@@ -1,6 +1,6 @@
 .container {
     margin: auto;
-    background-color: #f6f6f6;
+    /* background-color: #f6f6f6; */
     size: 75%;
 }
 
@@ -43,9 +43,9 @@
     width: 100%;
 }
 
-body {
+/* body {
     background-color: red;
-}
+} */
 
 nav.navbar ul {
     display: none;
@@ -67,14 +67,22 @@ nav.navbar ul {
         position: absolute;
         top: 20%;
         right: 30px;
+        
     }
+    #big-logo{ 
+        display: none; }
+
+    #small-logo { 
+        display: inline-block; 
+    }
+
     #navbar_small {
         display: none;
     }
 
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
 
     .small-width-25 {
         width: 25%;
@@ -112,9 +120,20 @@ nav.navbar ul {
 
 /*************MEDIUM SCREENS*******************/
 @media (min-width: 768px){
-    body {
+    /* body {
         background-color: orange;
+    } */
+
+
+    #big-logo{ 
+        display: inline-block; }
+
+    #small-logo { 
+        display: none; 
     }
+
+
+
 
     .med-width-25 {
         width: 25%;
@@ -138,8 +157,14 @@ nav.navbar ul {
 
 /*************LARGE SCREENS*******************/
 @media (min-width: 992px){
-    body {
+    /* body {
         background-color: green;
+    } */
+    #big-logo{ 
+        display: inline-block; }
+
+    #small-logo { 
+        display: none; 
     }
 
     .container {
