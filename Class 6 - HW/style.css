@@ -1,0 +1,191 @@
+/* IMPORTED FONTS FROM WEBSITE */
+
+@font-face {
+    font-family: 'bitter';
+    src: url('fonts/bitter-regular-webfont.eot');
+    src: url('fonts/bitter-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bitter-regular-webfont.woff2') format('woff2'),
+         url('fonts/bitter-regular-webfont.woff') format('woff'),
+         url('fonts/bitter-regular-webfont.ttf') format('truetype'),
+         url('fonts/bitter-regular-webfont.svg#bitterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bitter';
+    src: url('fonts/bitter-bold-webfont.eot');
+    src: url('fonts/bitter-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bitter-bold-webfont.woff2') format('woff2'),
+         url('fonts/bitter-bold-webfont.woff') format('woff'),
+         url('fonts/bitter-bold-webfont.ttf') format('truetype'),
+         url('fonts/bitter-bold-webfont.svg#bitterbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'armata';
+    src: url('fonts/armata-regular-webfont.eot');
+    src: url('fonts/armata-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/armata-regular-webfont.woff2') format('woff2'),
+         url('fonts/armata-regular-webfont.woff') format('woff'),
+         url('fonts/armata-regular-webfont.ttf') format('truetype'),
+         url('fonts/armata-regular-webfont.svg#armataregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'aguafina';
+    src: url('fonts/aguafinascript-webfont.eot');
+    src: url('fonts/aguafinascript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aguafinascript-webfont.woff2') format('woff2'),
+         url('fonts/aguafinascript-webfont.woff') format('woff'),
+         url('afonts/guafinascript-webfont.ttf') format('truetype'),
+         url('fonts/aguafinascript-webfont.svg#aguafina_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+/* NAVBAR*/
+nav.navbar{
+    width: 100%;
+    /* padding: 20px 0px; */
+    min-height: 10px;
+    position: relative;
+    
+}
+nav.navbar{
+   color: #e5a946;
+
+}
+  
+nav.navbar #logo img {
+    width: 100px;
+    margin-left: 30px;
+}
+
+nav.navbar #logo {
+    display: inline-block;
+    
+}
+
+.hamburger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+nav.navbar li { 
+    display: inline-block;
+}
+
+nav.navbar ul li a { 
+    font-size: 24px;
+    line-height: 36px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+ 
+}
+
+nav.navbar ul li a.active-link {
+    color: #3483f1;
+    border-bottom: 3px solid #3483f1;
+
+}
+
+
+
+
+.content{
+    padding: 0px 0px;
+    min-height: 572px;
+    border-bottom: 2px solid gray;
+    position: relative;
+
+
+    /* The margins and padding share this system of shortcuts where you can use any number of values between 2 and 4.  */
+}
+
+
+.content .img-container {
+    min-height: 160px;
+    position: relative;
+    /* we want this title position to sit against this relative container */
+}
+.content img{
+    width: 100%;
+    margin: 0px;
+}
+
+.content .abs-pos{
+    position: absolute;
+}
+
+
+
+
+
+.page-header{
+    color: #3483f1;;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    /* margin: 10px; */
+    top: 10px;
+    margin: 0px;
+
+}
+
+.sub-header{
+    color: rgb(24, 24, 31);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+.image-header{
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    text-shadow: 1px 0px 4px black;
+    margin: 0px;
+    /* removed it from the don flow but it still shows - does not affect any other elements. We must put it inside the picture's container. Next make it so that it is relative to its parent container */
+}
+
+
+.body-text{
+    color: rgb(24, 24, 31);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.learn-more{
+    color: white;
+    font-family: 'bitter', normal;
+    font-size: 20px;
+    background-color: red;
+    padding: 5px;
+}
+
+
+
+
+    
+
+
+
+

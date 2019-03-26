@@ -1,0 +1,164 @@
+.container {
+    margin: auto;
+    background-color: #f6f6f6;
+    size: 75%;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.image-header {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.image-link {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+
+
+.centered-content {
+    text-align: center;
+}
+.inline-content {
+    display: block;
+    width: 100%;
+}
+.inline-content img {
+    width: 100%;
+}
+
+.side-by-side-left, .side-by-side-right {
+    width: 100%;
+}
+
+body {
+    background-color: red;
+}
+
+nav.navbar ul {
+    display: none;
+}
+#navbar_small {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 30px;
+}
+
+
+
+
+/*************SMALL SCREENS********************/
+@media (min-width: 450px){
+    nav.navbar ul {
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        right: 30px;
+    }
+    #navbar_small {
+        display: none;
+    }
+
+    body {
+        background-color: blue;
+    }
+
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+
+    .inline-content {
+        width: 24%;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .side-by-side-left {
+        width: 65%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .side-by-side-right {
+        width: 25%;
+        display: inline-block;
+        margin-top: 0px;
+    }
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    body {
+        background-color: orange;
+    }
+
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+
+
+    
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    body {
+        background-color: green;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .large-width-25 {
+        width: 25%;
+    }
+    
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
