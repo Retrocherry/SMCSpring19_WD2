@@ -67,25 +67,11 @@ nav.navbar{
 
 }
   
-nav.navbar #big-logo img {
-    width: 400px;
+nav.navbar img {
+    height: 80px;
     margin-left: 25px;
 }
 
-nav.navbar #big-logo {
-    display: inline-block;
-    
-}
-
-nav.navbar #small-logo img {
-    width: 400px;
-    margin-left: 25px;
-}
-
-nav.navbar #small-logo {
-    display: inline-block;
-    
-}
 
 .hamburger {
     width: 35px;
