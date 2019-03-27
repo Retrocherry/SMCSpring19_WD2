@@ -141,14 +141,29 @@ nav.navbar ul li a.active-link {
 
 
 .page-header{
-    color: #3483f1;;
+    color: white;;
     font-family: 'bitter', normal;
-    font-size: 40px;
+    font-size: 80px;
     /* margin: 10px; */
     top: 10px;
     margin: 0px;
 
+   
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+
+#vertHorizCenter2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 .sub-header{
     color: rgb(24, 24, 31);
     font-family: 'bitter', normal;

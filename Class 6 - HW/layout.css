@@ -17,9 +17,17 @@
 
 .image-header {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 25%;
+    left: 35%;
 }
+
+.page-header {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+}
+
+
 .image-link {
     position: absolute;
     bottom: 40px;
@@ -44,9 +52,9 @@
 }
 
 
-body {
+/* body {
     background-color: red;
-}
+} */
 
 nav.navbar ul {
     display: none;
@@ -83,44 +91,41 @@ nav.navbar ul {
     bottom: 0;
     z-index: 1000;
     display: none;
-  }
+}
   
-  nav.primary-nav {
+nav.primary-nav {
     background-color: #000;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 55px;
     min-width: 200px;
     z-index: 1002;
     display: none;
-  }
+}
   
-  nav.primary-nav a {
+nav.primary-nav a {
     color: #fff;
     display: block;
     padding: 5px 10px;
-  }
-  
-  
-  
-  #toggle-menu {
-    display: none;
-  }
-  
-  #toggle-menu:checked ~ nav.primary-nav {
+}
+
+#navbar_small:checked ~ nav.primary-nav {
     display: block;
-  } 
+} 
   
-  #toggle-menu:checked ~ .menu-off {
+#navbar_small:checked ~ .menu-off {
     display: block;
-  }
+}
   
+.img-container {
+    text-align: center;
+}
 
 /*************SMALL SCREENS********************/
 @media (min-width: 520px){
-    body {
+    /* body {
         background-color: blue;
-    }
+    } */
     
     nav.navbar ul {
         display: inline-block;
@@ -171,9 +176,9 @@ nav.navbar ul {
 
 /*************MEDIUM SCREENS*******************/
 @media (min-width: 768px){
-    body {
+    /* body {
         background-color: orange;
-    }
+    } */
 
     #logo_large{ 
         display: block; 
@@ -205,9 +210,9 @@ nav.navbar ul {
 
 /*************LARGE SCREENS*******************/
 @media (min-width: 992px){
-    body {
+    /* body {
         background-color: green;
-    }
+    } */
 
     .container {
         width: 100%;
