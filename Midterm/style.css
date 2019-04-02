@@ -182,15 +182,18 @@ body {
 
 /* -------------NAVBAR-------------------*/
 .topbanner{
-    border: 10px solid
+    
    
     /* padding: 20px 0px; */
     /* min-height: 20px; */
-    height: 20px;
+    
     position: relative;
     color: white;
     
     z-index: 901;
+    font-family: 'bitter', normal;
+    font-size: 14px;
+
 }
 
 .topbanner{
@@ -330,6 +333,7 @@ nav.navbar ul li a.active-link {
     font-size: 28px;
     margin: 0px;
     position: relative;
+  
 }
 
 .image-header{
@@ -339,6 +343,17 @@ nav.navbar ul li a.active-link {
     text-shadow: 1px 0px 4px black;
     margin: 0px;
     /* removed it from the don flow but it still shows - does not affect any other elements. We must put it inside the picture's container. Next make it so that it is relative to its parent container */
+}
+
+
+.menuitem{
+    font-family: 'bitter', normal;
+    font-size: 12pt;
+}
+.menuprice{
+    font-family: 'bitter', normal;
+    font-size: 12pt;
+    color: #e5a946;
 }
 
 #center{
@@ -364,7 +379,9 @@ nav.navbar ul li a.active-link {
     border-radius: 10px;
     box-shadow: #fff;
 
-} 
+}
+
+/* FOOTER STYLING */
 
 .footer-header-styling{
     font-family: 'bitter', normal;
