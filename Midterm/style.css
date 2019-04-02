@@ -78,6 +78,7 @@ nav.navbar img {
 }
 
 
+
 .hamburger {
     width: 35px;
     height: 5px;
@@ -191,22 +192,35 @@ nav.navbar ul li a.active-link {
 .body-text{
     color: rgb(24, 24, 31);
     font-family: 'bitter', normal;
-    font-size: 16px;
+    font-size: 18px;
+    margin-left: 40px;
 }
 
+
+.body-header{
+    color: #e5a946;
+    font-family: 'bitter', normal;
+    font-size: 62px;
+    margin-left: 40px;
+    padding: 0px;
+    margin-bottom: 0%;
+}
 .learn-more{
-    color: white;
+    color: red;
     font-family: 'bitter', normal;
     font-size: 20px;
-    background-color: red;
-    padding: 5px;
-}
+    text-emphasis-color: gray;
+    background-color: #fffbcc;
+    text-decoration-line: none;
+    padding: 15px 32px;
+    border-radius: 10px;
+    box-shadow: #fff;
+
+} 
 
 
 
 
     
-
-
 
 
