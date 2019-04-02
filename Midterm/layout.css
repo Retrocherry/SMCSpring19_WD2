@@ -25,11 +25,30 @@
 
 .page-header {
 }
+
+.body-header{
+    color: #e5a946;
+    font-family: 'bitter', normal;
+    font-size: 42px;
+    margin-left: 40px;
+    padding: 0px;
+    margin-bottom: 0%;
+}
+
+.dodger-header{
+    color: dodgerblue;
+    font-family: 'bitter', normal;
+    font-size: 42px;
+    margin-left: 40px;
+    padding: 0px;
+    margin-bottom: 0%;
+}
+
 .text-on-image {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
     text-align: left;
-    font-size: 30px;
+    font-size: 20px;
     width: 70%;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -70,7 +89,7 @@
 
 
 .body-textContainer{
-    max-width: 90%;
+    min-width: 10%;
 }
 
 .inner-container {
@@ -180,7 +199,11 @@ footer .footer-text #social-media {
         display: none;
     }
 
-
+    .text-on-image { 
+        font-size: 20px;
+    }
+    
+   
 
 
     .small-width-25 {
@@ -230,6 +253,14 @@ footer .footer-text #social-media {
         display: none; 
     }
     
+    .text-on-image { 
+        font-size: 30px;
+    }
+
+    .body-header {
+        font-size: 72px; 
+    }
+    
 
     .med-width-25 {
         width: 25%;
@@ -259,6 +290,13 @@ footer .footer-text #social-media {
 
     .container {
         width: 100%;
+    }
+
+    .text-on-image { 
+        font-size: 40px;
+    }
+    .body-header {
+        font-size: 82px; 
     }
 
     .large-width-25 {

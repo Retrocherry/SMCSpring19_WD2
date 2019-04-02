@@ -62,8 +62,23 @@ nav.navbar{
     color: #e5a946;
     z-index: 900;
     
-    
 }
+
+.topbanner{
+    width: 100%;
+    /* padding: 20px 0px; */
+    min-height: 20px;
+    height: 20px;
+    position: relative;
+    color: white;
+    z-index: 901;
+}
+.topbanner{
+    background-color: red;
+    padding: none;
+    margin: none;
+}
+
 nav.navbar{
    background-color: #e5a946;
    opacity: inherit;
@@ -197,16 +212,9 @@ nav.navbar ul li a.active-link {
 }
 
 
-.body-header{
-    color: #e5a946;
-    font-family: 'bitter', normal;
-    font-size: 62px;
-    margin-left: 40px;
-    padding: 0px;
-    margin-bottom: 0%;
-}
+
 .learn-more{
-    color: red;
+    color: rgb(174, 24, 24);
     font-family: 'bitter', normal;
     font-size: 20px;
     text-emphasis-color: gray;
