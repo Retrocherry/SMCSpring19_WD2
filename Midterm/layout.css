@@ -55,19 +55,21 @@
     top: 50%;
 }
 
-.text-on-image h3 {
+/* .text-on-image h3 {
     font
-}
+} */
 
 
 .image-link {
     position: absolute;
     bottom: -20px;
     right: 0px;
-    border: 1px solid green;
+    box-shadow: 1px 2px 20px rgba(24, 24, 31, .50);
+    /* border: 1px solid green; */
 }
+
 .image-link a {
-    border: 1px solid orange;
+    border: 3px solid orange;
 }
 
 
@@ -166,8 +168,9 @@ nav.hamburger-nav a {
 footer {
     background-image: url('images/footer.png');
     background-size: cover;
-    background-repeat: no-repeat;
 
+    background-repeat: no-repeat;
+	max-width: 100%;
     height: 300px;
 }
 
