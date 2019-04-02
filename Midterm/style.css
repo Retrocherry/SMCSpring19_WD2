@@ -187,7 +187,6 @@ body {
     /* padding: 20px 0px; */
     /* min-height: 20px; */
     
-    position: relative;
     color: white;
     
     z-index: 901;
@@ -262,7 +261,11 @@ nav.navbar ul li a {
 nav.navbar ul li a.active-link {
     color: black;
     border-bottom: 3px solid red;
+}
 
+nav.navbar ul li a.hover-link {
+    color: gray;
+    border-bottom: 3px solid red;
 }
 
 
