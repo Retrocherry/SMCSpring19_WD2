@@ -44,6 +44,26 @@
     margin-bottom: 0%;
 }
 
+.quoteimage {
+    color: gray;
+    font-family: 'bitter', bold;
+    font-size: 32px;
+    margin-left: 0px;
+    padding: 0px;
+    margin-bottom: 0%; 
+    position: center justify;
+    size: 100px;
+}
+
+.quotelogo{
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    display: trans
+    width: 75%;
+}
+
+
 .text-on-image {
     position: absolute;
     text-align: left;
@@ -168,7 +188,12 @@ nav.hamburger-nav a {
     position: relative;
       
 }
+.quoteimage {
+    text-align: center;
+    /* width: 75%; */
+}
 
+/* FOOTER */
 footer {
     background-image: url('images/footer.png');
     background-size: cover;
@@ -282,7 +307,18 @@ footer .footer-text #social-media {
     .body-header {
         font-size: 62px !important; 
     }
-    
+    .img-container-justifyright{
+        padding: 20px;
+        display: inline-block;
+        border-image-repeat: dd;
+        width: 35%;
+    }
+    .img-container-justifyright img {
+        width: 100% !important;
+        vertical-align: top;
+    }
+  
+
 
     .med-width-25 {
         width: 25%;
@@ -310,6 +346,20 @@ footer .footer-text #social-media {
         background-color: green;
     } */
 
+
+
+    .img-container-justifyright{
+        padding: 20px;
+        display: inline-block;
+        border-image-repeat: dd;
+        width: 35%;
+    }
+    .img-container-justifyright img {
+        width: 100% !important;
+        vertical-align: top;
+    }
+
+
     footer img {
         margin-top: 30px;
     }
@@ -323,6 +373,8 @@ footer .footer-text #social-media {
     .footer-text p, .footer-text a, .footer-body-styling p {
         font-size: 120% !important;
     }
+
+
 
     .container {
         width: 100%;

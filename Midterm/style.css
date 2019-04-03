@@ -393,6 +393,16 @@ nav.navbar ul li a.hover-link {
     font-family: 'bitter', normal;
     font-size: 24px;
     color: rgb(24, 24, 31);
+   
+}
+.aboutcopy-styling{
+    font-family: 'bitter', normal;
+    font-size: 20px;
+    color: rgb(24, 24, 31);
+    /* padding: 300px 0px 0px 0px;
+    background-position-x: 75%; */
+
+   
 }
 
 .footer-body-styling{
