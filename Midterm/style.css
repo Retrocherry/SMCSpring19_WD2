@@ -199,6 +199,7 @@ body {
     background-color: darkred;
     padding: 5px;
     text-align-last: right;
+   
   
 }
 
@@ -342,8 +343,10 @@ nav.navbar ul li a.hover-link {
 .image-header{
     color: whitesmoke;
     font-family: 'bitter', normal;
-    font-size: 16pt;
-    text-shadow: 1px 0px 4px black;
+    font-size: 36pt;
+    text-shadow: 1px 1px 4px black;
+    top: 40%;
+    left: 33%;
     margin: 0px;
     /* removed it from the don flow but it still shows - does not affect any other elements. We must put it inside the picture's container. Next make it so that it is relative to its parent container */
 }
@@ -380,7 +383,7 @@ nav.navbar ul li a.hover-link {
     text-decoration-line: none;
     padding: 15px 32px;
     border-radius: 10px;
-    box-shadow: #fff;
+    box-shadow: rgba(24, 24, 31, .50);
 
 }
 
