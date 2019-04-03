@@ -336,6 +336,7 @@ nav.navbar ul li a.hover-link {
     font-family: 'bitter', normal;
     font-size: 28px;
     margin: 0px;
+    left: 40px;
     position: relative;
   
 }
