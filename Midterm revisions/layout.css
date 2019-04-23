@@ -223,6 +223,72 @@ footer .footer-text #social-media {
     font-size: 18px !important;
 }
 
+
+
+/* EVEN MODULAR LAYOUT */
+
+#vertCenter1 {
+    background-color: gray;
+    display: table;
+    background: white;
+    margin: auto;
+}
+
+#vertCenter1 p {
+    display: table-cell;
+    margin: 0;
+    background: darkred;
+    color: white;
+    vertical-align: middle;
+  }
+
+#vertCenter2 {
+    background-color: coral;
+    color: white;
+    position: relative;
+}
+
+#vertCenter2  p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+    background-color: orange;
+    margin: 0;
+}
+
+#vertHorizCenter1 {
+    background-color: navy;
+    color: white;
+    position: relative;
+}
+
+#vertHorizCenter1 img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin: -70px 0 0 -70px; 
+    /* first is negative, 0,0, top */
+}
+
+#vertHorizCenter2 {
+    background-image: url("images/background.jpg");
+    position: relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#vertHorizCenter2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /*************SMALL SCREENS********************/
 @media (min-width: 520px){
     /* body {
