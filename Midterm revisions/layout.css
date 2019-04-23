@@ -312,7 +312,10 @@ footer .footer-text #social-media {
     .text-on-image { 
         font-size: 20px;
     }
-    
+    .quoteimage {
+    text-align: center;
+    /* width: 75%; */
+}
    
 
 
@@ -376,6 +379,10 @@ footer .footer-text #social-media {
     .body-header {
         font-size: 62px !important; 
     }
+    /* .quoteimage {
+        text-align: center;
+        width: 75%; */
+    }
     .img-container-justifyright{
         padding: 20px;
         display: inline-block;
@@ -430,7 +437,10 @@ footer .footer-text #social-media {
     .body-textContainer{
         min-width: 40%;
     }
-
+    .quoteimage {
+        text-align: center;
+        /* width: 75%; */
+    }
     footer img {
         margin-top: 30px;
     }

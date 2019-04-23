@@ -210,13 +210,13 @@ nav.navbar{
     min-height: 40px;
     height: 80px;
     position: relative;
-    color: #e5a946;
+    color: #fffbcc;
     z-index: 900;
     
 }
 
 nav.navbar{
-   background-color: #e5a946;
+   background-color: #fffbcc;
    opacity: inherit;
    box-shadow: 1px 2px 20px rgba(24, 24, 31, .50);
    /* position DISTANCE - however far from the border (left) | strength | blur */
