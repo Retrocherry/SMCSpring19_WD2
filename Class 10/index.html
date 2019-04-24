@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id=mainbody>
+    <h1> Hello, world! </h1>
+
+    <button id="triggerButton"><Span></button>
+    <h2> Today's number is: <span id="numberBox"></span> </h2>
+
+
+   <script>
+        var numberSpan = document.getElementById("numberBox");
+        var randomNumber = Math.random(0);
+        numberSpan.innerText = randomNumber;
+        
+
+
+
+        var changeBackground = function(){
+            var redColor = Math.random()*255;
+            var greenColor = Math.random()*255;
+            var blueColor = Math.random()*255;
+
+
+            var textColor = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
+            console.log(textColor);
+
+            var subHeader = numberSpan.parentElement;
+
+            //subHeader.style.color = textColor;
+            var body = document.getElementById("mainbody");
+
+            body.style.backgroundColor = textColor;     
+        }
+
+
+        var myButton = document.getElementById("triggerButton");
+
+        myButton.addEventListener("click", changeBackground);
+
+        changeBackground();
+
+
+   </script>
+   
+
+</body>
+</html>
+
+
+
+
+
+

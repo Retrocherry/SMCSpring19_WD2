@@ -196,7 +196,7 @@ body {
 }
 
 .topbanner{
-    background-color: darkred;
+    background-color: #c71c2d;
     padding: 5px;
     text-align-last: right;
    
@@ -237,7 +237,7 @@ nav.navbar img {
     margin: 6px 0;
 }
 nav.hamburger-nav a {
-    color: #fff;
+    color: #e5a946;
     font-family: 'bitter', normal;
 
 
@@ -252,7 +252,8 @@ nav.navbar ul li a {
     line-height: 36px;
     padding: 10px;
     font-family: 'bitter', normal;
-    color: white;
+    color: #e5a946
+    ;
     list-style-type: none;
     text-decoration: none;
     text-align: center;
@@ -260,13 +261,14 @@ nav.navbar ul li a {
 }
 
 nav.navbar ul li a.active-link {
-    color: black;
-    border-bottom: 3px solid red;
+    color: #e5a946;
+    text-emphasis: 'strong';
+    border-bottom: 4px solid #c71c2d;
 }
 
 nav.navbar ul li a.hover-link {
     color: gray;
-    border-bottom: 3px solid red;
+    border-bottom: 2px solid #c71c2d;
 }
 
 
