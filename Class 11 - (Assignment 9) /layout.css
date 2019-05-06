@@ -4,8 +4,8 @@
 ○ If more than 700 pixels, type class desktop as block, class mobile as none */
 
 
-.desktop{
- display:none;   
+.desktop {
+    display:none;   
 }
 
 
@@ -13,10 +13,10 @@
 /*************MEDIUM SCREENS*******************/
 @media (min-width: 768px){
     .desktop {
-        display: block;
+        display: block !important;
     }
 
-    .mobilemenu{
-        display: none;
+    .mobile{
+        display: none !important;
     }
 }

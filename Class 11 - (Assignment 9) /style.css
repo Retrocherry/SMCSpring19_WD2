@@ -36,11 +36,12 @@ body{
 .mobile {
     display: inline-block;
     float: right;
+    top: 50px;
 }
 .mobile .hamburger{
-    width: 50px;
+    width: 30px;
     display: inline-block;
-    
+    height: 50px;   
 }
 
 .mobile .hamburger span{
@@ -49,6 +50,7 @@ body{
     width: 100%;
     display: block;
     margin-top: 5px;
+    
 }
 
 
@@ -59,6 +61,8 @@ background-color: black;
 top: 115px;
 bottom: 0px;
 margin: 0;
+height: 100px;
+width: 100%
 }
 
 .mobile li {
