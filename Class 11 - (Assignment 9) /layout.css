@@ -19,4 +19,8 @@
     .mobile{
         display: none !important;
     }
+
+    .mobilemenu{
+        display: none !important;
+    }
 }
