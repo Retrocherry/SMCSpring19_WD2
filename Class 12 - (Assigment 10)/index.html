@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class 12 - Assignment 10</title>
+
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img class="logo" src="images/logo.png">
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Characters</a>
+                    <ul>
+                        <li><a href="mario.html">Mario</a></li>
+                        <li><a href="luigi.html">Luigi</a></li>
+                        <li><a href="wario.html">Wario</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">Powerups</a>
+                    <ul>
+                        <li><a href="1up.html">1 Up</a></li>
+                        <li><a href="superstar.html">Superstar</a></li>
+                        
+                     
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mario Bros mini Wiki! Choose an item from the</h1>
+
+        <form action="" method="POST">
+            <label for="carMake">Asset</label>
+            <select name="make" id="carMake">
+                <option name="">---Please Select---</option>
+            </select>
+
+            <label for="carModel">Model</label>
+            <select name="model" id="carModel"></select>
+        </form>
+        <div id="description">
+            (description goes here)
+        </div>
+    </main>
+
+
+    <script>
+        var makeNameList    = [ 'Characters', 'Games', 'Items', 'Enemies', 'Allies'];
+        var makeList        = [ 'char', 'games', 'item', 'enemy', 'ally'];
+        var modelList       = [
+                                ["Mario", "Luigi", "Waluigi,", "Wario"],
+                                ["Mario Bros", "Super Mario Bros", "Super Mario 64", "Mario Kart"],
+                                ["Red Mushroom", "Green Mushroom", "Super Red Mushroom"],
+                                ["Goomba", "Turtle", "Browser", "Baby Browser"],
+                                ['Yoshi', 'Toad', 'Bones']
+                            ];
+        var modelDescrip    = [
+                                ["The main character in the Mario Bros. world. World's most famous plumber. Named after creators Landlord.", "Luigi info", "Waluigi info", "wario info"],
+                                ["Series-3", "Series-4", "Series-5", "Series-7"],
+                                ["C-class", "E-class", "S-class"],
+                                ["911", "Macan", "Panamera", "Cayenne"],
+                                ['camry', 'corolla is ok and cheap sss', 'dddd']
+                            ];
+
+
+        var makeDropdown = document.getElementById("carMake");
+        var modelDropdown = document.getElementById("carModel");
+
+        for(var i=0;i<makeList.length;i++) {
+            makeDropdown.innerHTML += '<option value="' + makeList[i] + '">'+makeNameList[i]+'</option>';
+
+        }
+
+        makeDropdown.addEventListener("change", function(){
+            console.log(this.value);
+            modelDropdown.innerHTML = "";
+            
+            let selectedOptions = [];
+            for(var i=0;i<makeList.length;i++) {
+                if(makeList[i] == this.value) {
+                    selectedOptions = modelList[i];
+                    break;
+                }
+            }
+
+
+            for(var i = 0; i < selectedOptions.length; i++){
+                modelDropdown.innerHTML += '<option value="' + selectedOptions[i] + '">' + selectedOptions[i] + '</option>';
+            }  
+
+            
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[0] + '">' + bmwModels[0] + '</option>';
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[1] + '">' + bmwModels[1] + '</option>';
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[2] + '">' + bmwModels[2] + '</option>';
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[3] + '">' + bmwModels[3] + '</option>';
+            // <option value=" + text + "> + Text + </option>
+            
+        });
+
+        modelDropdown.addEventListener("change", function() {
+            for(var i=0;i<modelList.length;i++) {
+                for(var j=0;j<modelList[i].length;j++) {
+                    if(modelList[i][j] == this.value) {
+                        document.getElementById("description").innerHTML = modelDescrip[i][j];
+                    }
+                }
+            }
+            
+
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+<!--  <main>
+        <h1>Mario Bros mini Wiki! Choose an item from the</h1>
+
+        <form action="" method="POST">
+            <label for="carMake">Asset</label>
+            <select name="make" id="carMake">
+                <option name="">---Please Select---</option>
+            </select>
+
+            <label for="carModel">Model</label>
+            <select name="model" id="carModel"></select>
+        </form>
+        <div id="description">
+            (description goes here)
+        </div>
+    </main>
+
+
+    <script>
+        var makeNameList    = [ 'Audi', 'BMW', 'Mercedes', 'Porsche', 'Toyota'];
+        var makeList        = [ 'audi', 'bmw', 'merc', 'porsche', 'toyota'];
+        var modelList       = [
+                                ["S3", "S5", "S7"],
+                                ["Series-3", "Series-4", "Series-5", "Series-7"],
+                                ["C-class", "E-class", "S-class"],
+                                ["911", "Macan", "Panamera", "Cayenne"],
+                                ['camry', 'corolla', 'solara']
+                            ];
+        var modelDescrip    = [
+                                ["The S3 is neat", "S5", "S7"],
+                                ["Series-3", "Series-4", "Series-5", "Series-7"],
+                                ["C-class", "E-class", "S-class"],
+                                ["911", "Macan", "Panamera", "Cayenne"],
+                                ['camry', 'corolla is ok and cheap sss', 'dddd']
+                            ];
+
+
+        var makeDropdown = document.getElementById("carMake");
+        var modelDropdown = document.getElementById("carModel");
+
+        for(var i=0;i<makeList.length;i++) {
+            makeDropdown.innerHTML += '<option value="' + makeList[i] + '">'+makeNameList[i]+'</option>';
+
+        }
+
+        makeDropdown.addEventListener("change", function(){
+            console.log(this.value);
+            modelDropdown.innerHTML = "";
+            
+            let selectedOptions = [];
+            for(var i=0;i<makeList.length;i++) {
+                if(makeList[i] == this.value) {
+                    selectedOptions = modelList[i];
+                    break;
+                }
+            }
+
+
+            for(var i = 0; i < selectedOptions.length; i++){
+                modelDropdown.innerHTML += '<option value="' + selectedOptions[i] + '">' + selectedOptions[i] + '</option>';
+            }  
+
+            
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[0] + '">' + bmwModels[0] + '</option>';
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[1] + '">' + bmwModels[1] + '</option>';
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[2] + '">' + bmwModels[2] + '</option>';
+            //modelDropdown.innerHTML += '<option value="' + bmwModels[3] + '">' + bmwModels[3] + '</option>';
+            // <option value=" + text + "> + Text + </option>
+            
+        });
+
+        modelDropdown.addEventListener("change", function() {
+            for(var i=0;i<modelList.length;i++) {
+                for(var j=0;j<modelList[i].length;j++) {
+                    if(modelList[i][j] == this.value) {
+                        document.getElementById("description").innerHTML = modelDescrip[i][j];
+                    }
+                }
+            } -->
