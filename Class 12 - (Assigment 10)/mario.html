@@ -14,6 +14,10 @@
         <nav>
             <ul>
                 <li>
+                    <img class="logo" src="images/logo.png" href="index.html">
+                </li>
+
+                <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
@@ -40,7 +44,7 @@
     </header>
 
     <main>
-            <h1>Mario!</h1>
+            <h1>It's a me, Mario!</h1>
         <img src="images/char/mario.png">
             <form action="" method="POST">
                 <label for="carMake">Asset</label>
@@ -55,8 +59,13 @@
                 (description goes here)
             </div>
         </main>
+
+
+<!-- ************ ARRAY DROPDOWN ************ -->
+
+<!-- ******* variables ***** -->
     
-    
+
         <script>
             var makeNameList    = [ 'Characters', 'Games', 'Items', 'Enemies', 'Allies'];
             var makeList        = [ 'char', 'games', 'item', 'enemy', 'ally'];
@@ -75,12 +84,17 @@
                                     ['Yoshi is a dinosaur-like character that acts as an ally of Mario and Luigi and is the protagonist of his own franchise.', 'Toad is a character who is Princess Peachs attendant and a longtime protector of the Mushroom Kingdom.', 'Used to try and kill Mario but a powerful, yet carefree Kong from Donkey Kong Island, Donkey Kong spends his days collecting bananas and spending time with his friends, particularly his best friend Diddy Kong. ']
                                 ];
     
+
+
+
+
+            var makeDropdown = document.getElementById("carMake"); //ie character, item...
+            var modelDropdown = document.getElementById("carModel"); //ie mario, mushroom
     
-            var makeDropdown = document.getElementById("carMake");
-            var modelDropdown = document.getElementById("carModel");
-    
-            for(var i=0;i<makeList.length;i++) {
-                makeDropdown.innerHTML += '<option value="' + makeList[i] + '">'+makeNameList[i]+'</option>';
+
+
+            for(var i=0;i<makeList.length;i++) { // NOW WE START THE FOR LOOP
+                makeDropdown.innerHTML += '<option value="' + makeList[i] + '">'+makeNameList[i]+'</option>'; 
     
             }
     
@@ -123,5 +137,6 @@
             });
     
         </script>
+
     </body>
     </html>
