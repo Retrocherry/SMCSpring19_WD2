@@ -1,0 +1,21 @@
+.gallery-container{
+    width: 200px;
+    overflow: hidden;
+    
+}
+
+.gallery {
+    width: 2000px; /*1800*/
+    position: relative;
+}
+
+.gallery-container img {
+    width: 200px;
+    display: inline-block;
+    margin-right: -3px;
+}
+
+
+.gallery-btn {
+
+}

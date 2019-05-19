@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 500px;
+            height: 400px;
+            background-color: azure;
+        }
+        .blue-container {
+            background-color: lightskyblue;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: orangered;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header" id="Top">Next stop, Yosemite.</h1>
+
+
+    <button id="btn1">Append Things</button>
+    <button id="btn2">Prepend Things</button>
+
+    <button id="btn3">Remove Addons</button>
+    <button id="btn4">Empty Container</button>
+
+    <button id="colorToggle">Switch color</button>
+    <div class="container">
+        I am child 1
+
+        <div class="box"></div>
+    </div>
+
+    <form action="" method="POST">
+        <input type="text" name="name" id="myName">
+        <input type="email" name="email" id="myEmail">
+
+        <select id="FX" name="effects">
+            <option value="" default></option>
+            <option value="show">Show an element</option>
+            <option value="hide">Hide an element</option>
+            <option value="fadein">Fade it in</option>
+            <option value="fadeout">Fade it out</option>
+            <option value="slidedown">Slide it down</option>    
+            <option value="slideup">Slide it up</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="https://www.backpacker.com/.image/t_share/MTQ0OTE0MDc2NDI0MTUyODA1/exp.jpg" alt="yosemite1">
+            <img src="https://www.wiredforadventure.com/wp-content/uploads/2015/06/El_capitan_landscape.JPG" alt="yosemite2">
+            <img src="http://www.vacationideasguide.com/images/yosemite/yosemite-falls-hike-o.jpg" alt="yosemite3">
+            <img src="https://www.tripsavvy.com/thmb/8-EPKRILtCQixtS-EJSAhXjMTQQ=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/yosemite-tunnel-view-482436597-5a21d3e9da271500372e9ada.jpg" alt="yosemite4">
+            <img src="https://www.nationalgeographic.com/content/dam/travel/2019-digital/yosemite-guide/yosemite-national-park-california.ngsversion.1552510235776.adapt.1900.1.jpg" alt="yosemite5">
+            <img src="https://farm6.staticflickr.com/5564/14775211410_42b8d244da_o_d.jpg" alt="yosemite6">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMWFhUWFxkXFxgXGBcXFxcdGBUXFxcVFxUYHSggGBolGxgVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFy0dHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAQIDBQYAB//EADkQAAEDAgQDBgYCAQQCAwEAAAEAAhEDIQQSMUEFUWEicYGRofAGEzKxwdFC8eEUI3KCUmKSotIz/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//EABwRAQEBAAMBAQEAAAAAAAAAAAABEQISITFBYf/aAAwDAQACEQMRAD8ApqNQhwsbrV8PqmAVnqVPKJOmgPkVoeGtIaulYixJkSmVngC6IwtJDcWe0W3WdXAz6uYSNExlNVtSqW1G/LuD9TdlosIwPAc24Psg9V1nLxzvEuDw8rQcPwIQOFoq5wrCufKt8YIGBGqZVrZBZHs0QeMoiJKxG6r31XVNdFX8QwzQC4GByOqLL8gI8VUYl5dqus8cqCqP5KSlVKc3DqZuFVtSQRg8QVaNrNdaFU0qBR1JkLFbiV9JoN0NVaJkKWpTKQYclTVBOCje0qzGEKd/oleyYoH4aUDXpwVqquEIGipcXhDK1OTNiohEUWSn/wCmKmZTIsFrWcCuYnNYiqeGJRDcOmrgelTVhhWLqdFF4ahJWbVkH4IgXR1TicKFvDzEoStRWPrfxNX4u46WQZ4g+ZlKMMnf6RWSJtCVca83koZzi4qyODTRhYWvGfQtKtlEKDEV0XVowgK9NWAOrVJUJqFS1GKH5a0yrMNQz6gkHnt3K1+WGiAqvh/EJMGw2KOfiBrrC5Oi1w1QCFFxHDZnBwEqso4ySrptcZZUxdZ3GYHJUGo7tO5WHCa4o1MpnI//AOp2Pcf0rKo5r2yQg6uIaxsxrug1mGY02VnTDQsTwPjrS80nWP8AE7H/ANe/333j652TNNXr6gCrcZVKBFRxRNN7+ZTMN1E2iDd3khH4aXaKzyOIulZRhOxgBmBRrcBZGUwEWy6zauKn/R9FPTwPRWUAJ2qauK//AEoTm4foiMhnopAFBAKHRccP0RYSood+HaRoqbHYK9gtC5DVGhVGbHDFE3CXgBaT5Eqejg2jZXsmMu7CEbKang5FlpnYYHZRuwrRsppjP0sASYVnhsDHVL80ByNpV2ppiUMtBQtbBzoifnhK2rKKGZgVzsLCNlLCupgAYVRVcMrWEmVNMZ2vh1R8YqikwvInS0gHW5vyW3r4cFZ/4jwTcoM9poJ1DYkXid4BVnJLxUGDy1pNMh0GDG1gfyixwl3JZzhWN/0uIDw3NTJeIaJfJbmLAM0QHW3vME7ehtxjXAOGhAI216K3lUnGPIKLw49l1t5GiINbI0xfb2EBQcBMi5g37kRiekGLkeCBmBmy0ODxEiJus3hajbX9z6qcYoU3STY+lpVRoH4wNaeihwFUVHw7e/RVVPiYeC2PFScPxEOAnTcJho7i/D8hzt0+x1norPgfHyexXjo/Tb+UdfuuxT81MxeypcLwypcgdwAgaqK9EZS3FwdCiKbF5xwnjdei4sMwJ7JBjUTH7WywPxLQcwOc7K7QiCfEEaj16KWVZYvWU1MKCiw7gQHC4IBHcRI9EYwrDSI0UoIUjio5RTolPY1RtKmaUCFNTyEkIhGpybC5ApKhqgKQyoMdVyU3vP8AFpPkLDzVGcx/xQWOy06YdBIJcYmLWATh8WVI/wD5NB/5kj7LJkEkkzzPeUPiK8WXXpHLvWlxPxLXdMEAcmnL66oFvH6g1dU8H29SFQMJd/L3KeKBiZWshtazDcWef5Zujhf0gqwocUG7SO6/3WIbWcwjl6+BV1g8cHC48h75qXjEnKtfQxLXaH34qww6yuGrDZXeCxPVc7G5VyEqhp1QVLmWWyrlG6oohiOaAglZL4lxAeCJggQIJ9Y6zZXeOx4DSZgALEcbxU3ylwJkT2gSIBBDT6qyJay+Kqua90OAIymQBYyAYcYyn9QrjB8Yq0m/LGV2W0kZbkBxsNbk3VBi5cCZcOyDBkggW1HhrETCHw1Jzmz8ov65so7gJFlpkTWpAkm0wT422UFNzSLHeN500hWYcCyYMwdBpEk38vJV7cIGEkG94tuOSCECGzYx/wDqx8kHiapgmNZOmitcPS7JbYSOfVoMnwUGIwYqOdBu1vnM6FXUwNgh2QYtEfn9eankh06dJ6n34qWiwsBaR+fPZDikS4zve6qNJw/G9m52Vpg8RNgsnhXgRt/lTNxjqdTWR9kw1rTw9rnZt+qzXEcI+hUysBcw35x0nvV9gMaHAGVLVxLPnNpEfWxzp27JAy99yfBT4v1V8P43WYIa8hsi1v45RF9LNAWlb8agRNLvg9bwqbivBBUb2Oy6fDussjXdUpOLHajnca6qZKbY9n4bxilXbLDfdu4RT3heN8P4tUoPzxBIG0giQY66Ba7hfxq1xiqMthcXvJknkIy+ql41qcm1a4KQVQq3C4xlRocx4cDaxm/LvT3VFnGtWTagK4kKp/1BU1PEymGrKE2TySUHJ7ngbgKBj6oFzA7yB91m/ifimb/ZZBEjP1M2Z6A+ys/8Q8UNWpnP0iQ3/jse/dRYB8mxB39JB6aFdePH9YvL8Mxbcrj0H+VneKvvM2mO5XmIfJe5xlo1iMxgaRss1xOsD0ECAb7c41XRzWHDmguGUgxTl0bnMQPFXgpwFl/h3FMaTmMHMQRzEiLbXlar+M7HToNFnWguIpS0e9lBQeW++5WIpmPH9pjMKDmJJEX012CSpYIwtQi2br07lcYfFERIhZ5rzad0WKhEJUjUYbHWR1PGghZGnjHDqicDjMwi1lix0laQ1p3VbjcflMCDb1QVXGBoJBvt91lcdjjmMnWTfX+1FrZ4rGUywF/0OF9eyZiDGl7LJcablZLXgszSDJBdrlBGkgg9e5JR41DC06O0m42EXB5Gf7VNiK2hgRJPZ93PikShnAHKHZ3AAiJgAZogT39LlNfii0lrM8AnR7mzfdoMA7HuQtWscxzXkneTeDrfvQ9WpEbSJsPCe+yEW+ExwAh0hsWgTldOncQCpcRVsD3mdNeQ30VNisRld8u4dJPrLfMX8IVpgGB7Hu7Ii2kmSLa6CzkqwRgqOduZ3ZuBAgk+9VWnGNa50EnNB10EaAKzGIE5QIYAABzuDP3VDicY35vyr5I31DtZkaXSFWVDGS6dVLWp3BGn2Q2DqFpEGR3X/wAq/NJrg0tIH73stsAThs8AaRM/dBV6LmGHDex2K01CkBp76Kn+K3tDGgzJI06EfkhLRLwo5Xcmu0791XcWxpp49rybNy8pygGQAe9wnqiqtBxDS11yA4cgYkhZHF4kveXOsefMzrG23kpVev4d0iQZBE/5CpfiPhAquDwYMQfwguEcdaaYJcAGlrNzGazZJ7jfpdaFsuEcr/0p/VZWlgalKxEh2hjS38gULiAS0GnYgdqBr/7FbLHlopOLnfScpjYmIB82+ax/A8YW5R9UyHAXIEyPx6rUqWIsJiqsz9JBHa09eauzxet8vMxxcGOM7EGfq6yNjIuUPxHhjMvzGgxqQ027wPVDYAlpqt1i/lP4KqNTg/ihlUhmUh8XmwneOYR54i5ozAA9CY9VhBSkiBBzSBpB3IPLotRh8TDIqC8LNiytFwvjratgcrwO00zawmP/ACF9ULxrjUU35d+yDvfWB3SsRX420VmODYId4xuPESr/AInSFXKaY/2x0vJuT1sAk4+l5eKHG41oLQRMGbbWHO3NXJILR8p1POWweYgyA3cySTMaDxVfhmuJBEEXERbbXwCfiqZY+Wu7RgEBo001W2C1OHGbPkkHncmJEeXkqfivCT/Lnr6LW4OqLNi+3Px5LuNfLawGpYSJ3N3AeUkeaWqweBwgZXaR2o2vcxb1K3dDBu+WC4gk8tunelbhm5M1IAg7iL9Z3TsZmpsBbfPpcnLa4EamYWVhHOpsBBe1sHQm9oT8LxNgBgiwNoAne9yZgi/VUOIw78kvMk3bO1+Wh5qXB4Akl5kQZIAtJEATrYAc1cTVriazHgmRzAjrsf0hzeEDiaEHUk6lxkXMyADJhHUmiw9+SqIq1SBvJ0hB8PxRm+k/n1Kk4yCxsluZvS8dSLHxlZvDYwZhc2dJA7+fl0WK01XEsV2eYvOtuohZ3FVyTcn1/KscRiG5CXTETb8FU9Y3aBmDu4yJNtT1SzDdPpVraWtOnsFEt+SW5gXB4E7a/wDY3116KsZWyntARod9DfuPckfiaTpzC02EE8zMz2uXcoIXBzn2Mk9Y0GszaIQ9Rr5M67wR+DBXY2sC8ZQdBqc2gMxaw6bJuIEmS65ubR6Sorsbig7FAm4By62j6fvdXGDBD8sxmsZ9NN9R4rFtrds3tK1uHrZmTvA81njVTV5Y1xcY5Hr3b9yylfEk1cwIm08tIsCtBx6scgmIcCdSHSLGNiNLFZJ7gHb26Qf0lo1OBxlwCAD03tOiOrcaNDKYPaPaadItLged/RUmBqtf9QtoD9pKH4xUMhuYkNsJ25j7LdvjMb2nxIGCDY/pUXxfi82WDy2uDM/b7IXC1poscNWnK78eER3HvVbxTElzm78pGxvBPQqW+K0VB7H4UBz2sLdCTcX87wdllsSe0e0Drfn/ANt5ujeHvkFrgw2kZyY/4yLE9NLKurvvJDQSJsGxrsBp3QNlNBeDxhb2ZIabkSYJHQeC29P4kPzsO7+IGR97OzRmdytYzpY815xSeQfHUK0bWnwuN1NGlxnHw51ek4Sx78zTMEGCM1hobd2vePwTFtY9zSQA9kkkj6hdon/5WGs+Wc+Z3fj7J9KuRlIMRG8R3RfnfW61o9B4HiqdSkWuIBuHAEwIk5myLb2vF0tDhRpVA6czSYOxvaCOWix/CMQRWaTEE3m4AJzTc3O/7Xo9F7TdplhuOnuVdA9DhwBLtpnutC7HUiQfLzVkwQUmLwWcRKumPMuLVctVpGzpMXI6a9V6Lw6nDKZBkACOnRYD4noAV3tggg9IMDUb35St78M02vwtMZhIaCcpmOdnDSVN9MWrcAxwMWJ3EfZCv4XlNhLj1iY6FB1azvmQXjI0honc6i2gtvt32VrSx4d9VgNHEgAkcjK2nisP+2S5wykA/Vta5nksb8SY99RxJmGjn2Q4HsuExE3ga3XpWJxoLHSM1jYXJna3ivL8Zg3NaQKjmxmc1tVmSIsGtNw6xHIEjqVLdRZfCPGL/IeQc0kGd4ESTzNv7WprBsw5wEDcSPv3bbLyWo97KlzDgfGd58V6RhceKrW1CA0uaBYamQCSOdlON/CpMZg/pcXBwn+JFo2g3HkjaMANtzjc31k7nRdw+o0k5mmDtoOgI3UtXDho+prZvF9u4FbpAeLpBx1jZK4Bt7SonVRsDeZ0+8qP5gAc4zAvfWw8psmGqb4kxIziHNa7+Q2PKQLrKtqwTucxGlhc6f0VpOKYltWcgLSJ7TqboNps4aQs1nAaWifqdobfUYjmO/zXOtRphjmCk2zpiDAa7bfMI3Co6zhl+oGT9N5senZ03UWFq9mBsd7+MG0+CV7iKZLQIuC6RJ6Buwvy8VO2r1RyWiZGsRqfSykwVd3zBlbncbCGg3NhE2B5FMpPa6SSAcxJGkgxZhgiddei7E0Mruy/QiMwykQd47JIOvhqoYTEPa6tTzsygkBwbAJvBsbA30RzOGUTf57Gf+rmvzDoeqpsa4EsJ/7W3tMCb+n5Vu59KwZSFQAQXPcASegaQA3S197lBiWEh39q7w9UgCCY77DVUlQtL3ZRabdFcYTFwwtyiSCBp5rnKqTHcSfUY1jgCBMXg6d23NV2DynNLg2CDsXH/jzhR1iDrP384Q1M3t781ZUaPBiWOLXNd0gg25gj9qt4jUkgieZB8bg7pnDsZkcSB4Xj/CgxFbMdIv46RotajQfDlbO19MixBM7g2E/YKrxxAdY+I38DomcMrwXaaaXvz8YT8a+dWQZFoIdpH/YWU1SMfA9QmvrA6Na3sxuS7mTM38lHTrCIiJ5/tRvIDjB1CkofTI5o6g7Tfu6qsFSQLIqi60fhUT1Xc0lH+tFE93cm0nIixoNLi1rRJNgIJ8o1XpnCqZbRDHyHBoi+ltD1mQvM8G9zS0ttyvGm4cTY9xBuvRuD411SixxIJi+XkLEanl4+KsWNBgqmaztdvJEueAC4mALmdoVW2rlLfT8fpEYzEjIZY5zTq1usfsKqwHxPiM1cuBmT2SSJIixht45OI+yK+FOLGnUYZAbOV0k5YcZJknY38POr4zRbmyMzEhx7DhcSHbTFhzvfWyZwvdthOp0IiOcwiPWcZQaA57GAvcNefJNw5loaWkHkJiZnUbJnCaxfTgm7QB16E9TH53TazYtG+l/wtypUfFn1GUiWZZG7swEXntNuDfXosTj8Y6pSqE16tT/bcSAzJThjOsGYyukAXcLDbRcUfILRlaP5fMBLYA1sfwb+awvF6D/l1XtMCHE3u4FpLhlBgNs4xfedYTUVmPE1CHl4AJAkAGJMTB10m83Wq4JWLaIBloEZBHWZzA7+OpWLxDS1wDgL32gW6EiVe8LxcsAFm8lz3KuNzw7ENyCZMGI5jqSialZrnBo7Mjc26+azPDMT2o2KdxTGlrhB0v5Lp28TF/UogTee7RCV35WuOsTadfRQcM4lnpSfqb2TzNgQ7rIhA8SxpyGY3iw1IMSukuzWP3APEeIOLiyr8siRLQHGBrOYmPvCzdSoC0Q0AS8zNyC9xAI6WR3zmvYZaJynWb7ZwJ7TvC0KvovlmUiYJgjUSeRvC4266Q8Vez2TA3TqbxJAcIvcszHwFw2+6HYbHSffh5KIvHuyxqiKTxBkB1gZmIlotH8v8KaljyG5A6Z/iRIPjPO+iDpVwGlovmaLwLFpcNTpYnTooC9KorGtIa1xENJOWxjaYO97eCKw3CXVGh1+mVrdOsuF0Hjcb/sCkNqgfpf6SNZ0vy8dlDS4g5ojM4bwCQL62BQVTqcG5BBuDz8NkY1wI3EDdQRmERcaCR4ymCpFj67LH0c55kxF/LyQ4N0+pJ0n3olq4ctbJN9x+PfNaQRRfu4+I18/2ontkiLk+fquwoNwQb3/ADN1JUIJaQIvtb3yTRNhnhoJLYPM/rdLjsWXQ4/UTc3uev7UVdxi58AoozNidDKyJgQ7U+Gl02rY35IcOI598/lTVdj0VDwOzMWOikpER08bdUylBEeSayRKCYiwuD1Tabosf0oweke+q5h2WhfcLe49ltw62UmAZjS+th/a3nw5hKtMOa9paBEbjwIsvN8C8hem8BxzqlMOqDTs7ycoFzteRokWLPENkAaXsfx91Hjq8MILwzm4yJNiBI0nn1TK+KGg8fRCnGNio5wzhsdkCS6ezA+yuqyXEsTme3tZwCJLS4EiCIBdJm6lwkBwyukG0Gez5geiGx2KY5hDWFsVJbeco0DSYmespKNaCCYHWPvzU1HpPwoyGElxl2rTGv8A5SZJNjeYseSlq8QBqPFoA7JG5HMnbU+CyPA8UxlV1TMDAJFnAZtm956cukKR+O/lJnn3bq6JMbWDyRLrm+UwTpNxoFmOO1KjPmtbVJa4EOaGZG5YImRYwI01lGuxToeZGxvuZ/UqmxeIawPayO01wmLkEGZB6eSalire6BpYx+5jyVlgMVDInT3CqqlUkgm9gDfYAD7Img7s+/JZRd4TG5XCL9rw15pOKY3OS4CB/aq8O6SOs7+nRPxNcubeZFuY6aK74D+AYuKkHQgz4Ak/ZLRxk06gMzJI/wCxuNefTdU1F8Te+0HrBkd0qYVBJGkj++//AAr2smJiOo+87Wt/SEY60zGt/EqerVEyDZBhwA981loVmtf0TC/n5KOm7l5JHuQNa++vP7rmO9PfkoCbqf5ggW2v4II33lIW9UlRwhRtKKgw9Wdbe/VS1njpfx03vogGm6MD+tzGsR39FkOwtpdvpvN1JSg2ItcABR1H/wDkO8gXPeZ6pjXgdN4OiILLpE79+0odrpsdCn1XCLG2uuk9EPTcJukE+JfpuOf6ukpm46yP7UNR6a1xF41QPcfPrqnOda/n+E2pr33skdUIsZVVLRf5KXMQ/wAbde9CMN1M92h5IJKrrn7apKQP6TiwEWCmYQR7t7P3TRJSfpcK8wnFvlCAdw7obEO2nQhZ1hB1idClNTTog2r+KR2huQfOx8YQlfFwDB3n9fdUtDESwDlb9JalfnylDRDqlu8+ahdiNO5B4ivpfqkqOuDsfFUXuK424Mu1uaB2gALNBsY5z6BPocTztsRJsZ59yz9SsCf1NxySUauUxmkdBr4KJo6pjH3MyAYiNe68oTF1HPJ7Ok92hn8KStVkAj2eiCxL4OhH3uqHtd2RziyX5thfzUTn6Ef0d02qfCUQbhX3g7/hSV6snXxlV1F0H1/Slr1ffJBNSd2h78ipqjrxPcgsN9WvvwUrnQffNQNrv2UDX2SV6lz3So6TrSq0mNYwAnDqh5g/Zc56BS+/RSMfp+UM7ZSFog+/NA6qY8UPA70/EHXSyG+aOSCOmVO7SJQrFN8wge7qUc5x7lzZidPfJRhxOnvwUlNvVBJmtzjqo6Z5ptRNpFBI549lLSN7adVE4805jvAICar/AETXXEwUx/ORf3ouJMETskCMeZUxqCIjxQdNEufA0BVqiGVAbSlw9Qz+NUOx9phNbV9gR6qYgsakym1Kij+f2r+5G6Sub25JAVQxG32UlOpIjy8dUAx5T6NVUFV33snUnjfbTSPVC1qiXD1deZ97Ih+Id3ff+klOpbnGl/wh6rwSnUz70UMGtq7Tva0wh6zk3L4c7hdXqclR02ulzW3t5aodrwla/oglY9TVHgwCe4/hCMTnvMdEBdB8HUae4XVH+PVAUn3RFd+nTldSmOqvnomMKbVdATWOVVJUclaRzUTikFW1tUU+qn1akwLftQm553CbXrSemyiU6u8aR6+iHBjkmOem51oLMXUragNiPKy5cops949Vwd1XLkCmtaP7TWQei5cgc4Bc0SeXj+1y5QPdHSybVcuXKwIwqVz7LlyUNNS0JG1I6rlyYFLhPPvS1KunP/K5cg4PSseuXIhKj7qSlUA3XLkDagnRI0FcuQOD4XPcOXkuXIGE80ocuXIJKFQTM3UhAJjQd3NcuUEDhlMGAlebafYLlyBKhTGuXLlVSF1lM/AwLmHHYxBvoFy5S0QMJaesXn/Kge4pFyqUmHZmdB01KIewEyRfouXKUf/Z" alt="yosemite7">
+            <img src="http://epicwallpaperz.com/wallpaper-hd/yosemite-wallpaper-high-definition-On-wallpaper-hd.jpg" alt="yosemite8">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSGUNH25FnK9vlcAYe-sIXuPkud9eJhaG5LMaiLIm9ROi8IMOhw" alt="yosemite9">
+        </div>
+    </div>
+    <div class="btns">
+        <button class="gallery-btn" id="back">Back</button>
+        <button class="gallary-btn" id="next">Next</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').css('background-color', '#a11a1e');
+            $('.header').css('color', '#fefefe');
+            console.log(  $('body').css('background-color') );
+            $('#FX').change(function(){
+                var selection = $('#FX').val();
+                
+                
+                if(selection === "show"){
+                    $('.box').show();
+                } 
+                else if(selection === 'hide'){
+                    $('.box').hide();
+                }
+                else if(selection === 'fadein'){
+                    $('.box').fadeIn(2000);
+                }
+                else if(selection === 'fadeout'){
+                    $('.box').fadeOut(3000);
+                } 
+                else if(selection === 'slidedown'){
+                    $('.box').slideDown(2000);
+                }
+                else if(selection === 'slideup'){
+                    $('.box').slideUp(2000);
+                }
+
+            })
+            $('#colorToggle').click(function(){
+                $('.container').toggleClass('blue-container');
+            })
+            $('#myName').blur(function(){
+                console.log( $('#myName').val() );
+                if($('#myName').val() === "Gabe"){
+                    $('#myEmail').val('gabesilverstein@gmail.com');
+                }
+            });
+            $('#btn1').click(function(){
+                $('.container').append('<div class="container-child">I am child 2</div>');
+                $('<div class="container-child">I am child 4</div>').appendTo('.container');
+                $('.container').after('<div class="addon">I am AFTER!!!</div>');
+            });
+            $('#btn2').click(function(){
+                $('.container').prepend('<div class="container-child">I am child 3</div>');
+                $('.container').before('<div class="addon">I am BEFORE!!!</div>');
+                $('<div class="container-child">I am child 5</div>').prependTo('.container');
+            });
+            $('#btn3').click(function(){
+                $('.addon').remove();
+            });
+            $('#btn4').click(function(){
+                $('.container').empty();
+            })
+
+            
+
+            var currentPos = 0;
+
+            $('#next').click(function() {
+                if (currentPos > -1800){ //1800
+                    currentPos = currentPos - 200;
+                }
+
+                let leftAmount = currentPos + 'px';
+
+                $('.gallery').animate({'left': leftAmount});
+            });
+
+            $('#back').click(function() {
+                if (currentPos >= 0){
+                    currentPos = currentPos - 200;
+                }
+                currentPos = currentPos + 200;
+                let rightAmount = currentPos + 'px';
+
+                $('.gallery').animate({'left': rightAmount});
+            });
+        })
+    </script>
+    
+</body>
+</html>
