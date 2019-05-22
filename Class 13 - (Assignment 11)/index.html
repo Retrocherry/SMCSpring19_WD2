@@ -60,7 +60,7 @@
     
     <div class="gallery-container">
         <div class="gallery">
-            <img src="https://www.backpacker.com/.image/t_share/MTQ0OTE0MDc2NDI0MTUyODA1/exp.jpg" alt="yosemite1">
+            <img id="img1" src="https://www.backpacker.com/.image/t_share/MTQ0OTE0MDc2NDI0MTUyODA1/exp.jpg" alt="yosemite1">
             <img src="https://www.wiredforadventure.com/wp-content/uploads/2015/06/El_capitan_landscape.JPG" alt="yosemite2">
             <img src="http://www.vacationideasguide.com/images/yosemite/yosemite-falls-hike-o.jpg" alt="yosemite3">
             <img src="https://www.tripsavvy.com/thmb/8-EPKRILtCQixtS-EJSAhXjMTQQ=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/yosemite-tunnel-view-482436597-5a21d3e9da271500372e9ada.jpg" alt="yosemite4">
@@ -70,9 +70,12 @@
             <img src="http://epicwallpaperz.com/wallpaper-hd/yosemite-wallpaper-high-definition-On-wallpaper-hd.jpg" alt="yosemite8">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUSGUNH25FnK9vlcAYe-sIXuPkud9eJhaG5LMaiLIm9ROi8IMOhw" alt="yosemite9">
         </div>
+
     </div>
     <div class="btns">
         <button class="gallery-btn" id="back">Back</button>
+        <button class="remove-image" id="remove">Remove</button>
+        <button class="add-image" id="add">Add</button>
         <button class="gallary-btn" id="next">Next</button>
     </div>
 
@@ -115,6 +118,7 @@
                     $('#myEmail').val('gabesilverstein@gmail.com');
                 }
             });
+
             $('#btn1').click(function(){
                 $('.container').append('<div class="container-child">I am child 2</div>');
                 $('<div class="container-child">I am child 4</div>').appendTo('.container');
@@ -125,12 +129,26 @@
                 $('.container').before('<div class="addon">I am BEFORE!!!</div>');
                 $('<div class="container-child">I am child 5</div>').prependTo('.container');
             });
+
             $('#btn3').click(function(){
                 $('.addon').remove();
             });
+
             $('#btn4').click(function(){
                 $('.container').empty();
             })
+
+            // $('#remove').click(function(){
+            //     $('.gallery').empty();
+            // });
+
+            // $('#add').click(function(){
+            //     $('.gallery').show('gallery');
+            // });
+
+            // $('#add').click(function(){
+            //     $('.gallery').appendTo('gallery');
+            // });
 
             
 
@@ -155,7 +173,39 @@
 
                 $('.gallery').animate({'left': rightAmount});
             });
+
+
+            $('#add').click(function() {
+                if (currentPos >= 0){
+                    currentPos = currentPos - 200;
+                }
+                currentPos = currentPos + 200;
+                let rightAmount = currentPos + 'px';
+
+                $('.gallery-container').append('<img id="added-img" src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg" />');
+
+                // $('<div class="add-image">I am child 4</div>').appendTo('.container');
+                // $('.addon').remove();
+                
+            });
+
+            $('#remove').click(function() {
+                if (currentPos >= 0){
+                    currentPos = currentPos - 200;
+                }
+                currentPos = currentPos + 200;
+                let rightAmount = currentPos + 'px';
+
+                $('.gallery-container').removeChild($('#added-img'));
+                
+                ;
+                // $('<div class="add-image"></div>').appendTo('.container');
+                // $('.container').after('<div class="addon">I am AFTER!!!</div>');
+               
+            });
         })
+
+       
     
     </script>
     
