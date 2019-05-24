@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: lightsteelblue;
+    /* color: red; */
+}
+
+li {
+    margin: 5px 10px;
+    background-color: mistyrose;
+}
+
+
+li#home {
+    order: 0;
+}
+
+@media(min-width: 768px){
+    ul {
+        flex-direction: row;
+    }
+
+    li#home {
+        order: 1;
+        /* flex-grow: 2; */
+        flex-shrink: 3;
+    }
+    li:nth-last-child(2){
+        order: 2;
+    }
+    li:nth-last-child(1){
+        order: 3;
+    }
+}

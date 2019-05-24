@@ -1,0 +1,130 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    background-color: lightsteelblue;
+    /* color: red; */
+}
+
+ul{
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: 200px
+    
+
+}
+
+li#home {
+    order: 0;
+}
+
+
+
+/*************SMALL SCREENS********************/
+@media (min-width: 520px){
+    /* body {
+        background-color: blue;
+    } */
+
+  
+    nav.navbar ul {
+        display: inline-block;
+        position: absolute;
+        top: 10%;
+        right: 30px;
+    }
+   
+
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+
+   
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    /* body {
+        background-color: orange;
+    } */
+    ul {
+        flex-direction: row;
+    }
+
+    li#home {
+        order: 1;
+        /* flex-grow: 2; */
+        flex-shrink: 3;
+    }
+    li:nth-last-child(2){
+        order: 2;
+    }
+    li:nth-last-child(1){
+        order: 3;
+    }
+
+
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+
+
+    
+
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+   
+
+    .text-on-image { 
+        font-size: 40px;
+    }
+    .body-header {
+        font-size: 82px; 
+    }
+
+    .large-width-25 {
+        width: 25%;
+    }
+    
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
