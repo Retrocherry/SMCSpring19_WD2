@@ -2,35 +2,122 @@ body {
     margin: 0px;
 }
 
-nav {
-    background-color: lightsteelblue;
-    /* color: red; */
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 li {
-    margin: 5px 10px;
-    background-color: mistyrose;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 
-li#home {
-    order: 0;
+
+header .top {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
 }
 
-@media(min-width: 768px){
-    ul {
-        flex-direction: row;
-    }
 
-    li#home {
-        order: 1;
-        /* flex-grow: 2; */
-        flex-shrink: 3;
-    }
-    li:nth-last-child(2){
-        order: 2;
-    }
-    li:nth-last-child(1){
-        order: 3;
-    }
+header .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .bottom ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.header-img {
+    position: relative;
+
+    height: 400px;
+    overflow: hidden;
+}
+.header-img img {
+    z-index: -1;
+    width: 100%;
+}
+
+.header-img h1 {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+}
+
+.header-text {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.header-text span {
+    width: 70%;
+}
+
+.learn-header {
+    text-align: center;
+}
+
+.three-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 40px;
+}
+
+.three-boxes .card {
+    width: 300px;
+}
+
+.three-boxes .card img {
+    width: 100%;
+}
+
+
+.take-action {
+    font-size: 25px;
+    padding: 20px 40px;
+    background-color: orange;
+}
+
+
+footer {
+    margin-top: 50px;
+    background-color: green;
+    padding: 30px;
+}
+
+footer .top {
+    display: flex;
+    justify-content: center;
+}
+
+footer .main {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner-main {
+    width: 40%;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-bottom ul {
+    display: flex;
 }
