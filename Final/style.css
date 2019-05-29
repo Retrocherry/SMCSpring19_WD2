@@ -29,6 +29,7 @@ header .top {
 header .top li {
     margin-left: 10px;
     font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header .top .icon-wrapper {
@@ -64,7 +65,10 @@ header .top .icon-wrapper img {
 
 #mobile-menu .menu-container {
     position: fixed;
-    background-color: orange;
+    background-color: #f0f0f0;
+   
+    box-shadow: -9px 0px 76px -49px rgba(0,0,0,0.46);
+
     top: 0;
     right: 0;
     bottom: 0;
@@ -76,7 +80,7 @@ header .top .icon-wrapper img {
     justify-content: flex-start;
     padding-top: 120px;
     padding-right: 40px;
-    transform: translateX(10%);
+    transform: translateX(100%);
     transition: transform 200ms ease;
 }
 
@@ -90,7 +94,7 @@ header .top .icon-wrapper img {
 }
 
 
-
+/* NavBar (Header Bottom) */
 
 header .bottom {
     display: flex;
@@ -101,22 +105,27 @@ header .bottom .desktop-menu {
     display: none;
 }
 
+/* .logo{
+    width: 90px;
+} */
+
 header .bottom ul {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-
 }
 
 header .bottom ul li {
     margin-left: 15px;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/* BANNER IMAGE */
 .header-img {
     position: relative;
-
+    background-color: palevioletred;
     height: 400px;
     overflow: hidden;
 }
@@ -126,6 +135,15 @@ header .bottom ul li {
     width: 100%;
 }
 
+.header-img-text {
+    font-size: 48px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 20%;
+    text-shadow: 2px 2px 9px #190B07;
+}
+
 .header-img h1 {
     z-index: 1;
     position: absolute;
@@ -133,22 +151,33 @@ header .bottom ul li {
     transform: translateY(-50%);
 }
 
+/* BELOW BANNER TEXT */
+
+
 .header-text {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lightblue;
+    background-color: #f7f7f7;
+    text-align: center;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+
 }
 
 .header-text span {
     width: 70%;
 }
 
+/* HEADER FOR 3 BOXES */
+
 .learn-header {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
-
+/* 3 BOXES */
 .three-boxes {
     display: flex;
     justify-content: space-between;
@@ -157,6 +186,15 @@ header .bottom ul li {
 
 .three-boxes .card {
     width: 300px;
+}
+
+.card-subHeading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 .three-boxes .card img {
@@ -173,7 +211,7 @@ header .bottom ul li {
 
 footer {
     margin-top: 50px;
-    background-color: green;
+    background-color: #006438;
     padding: 30px;
 }
 
@@ -182,10 +220,33 @@ footer .top {
     justify-content: center;
 }
 
+.footer-header{
+    font-size: 28;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.contact-container{
+  
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
 footer .main {
     display: flex;
     justify-content: space-between;
+
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    
 }
+
+footer left .inner-main {
+ 
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+}
+
 
 footer .inner-main {
     width: 40%;
@@ -194,10 +255,16 @@ footer .inner-main {
 footer .footer-bottom {
     display: flex;
     justify-content: space-between;
+    font-size: 3;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 footer .footer-bottom ul {
     display: flex;
+    font-size: 9;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
 
 
