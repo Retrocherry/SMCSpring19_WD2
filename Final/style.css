@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'webfont';
+    src: url('fonts/webfont.ttf');
+    font-style: normal;
+}
+
+
+
 body {
     margin: 0px;
 }
@@ -29,7 +37,7 @@ header .top {
 header .top li {
     margin-left: 10px;
     font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'webfont';
 }
 
 header .top .icon-wrapper {
@@ -66,9 +74,9 @@ header .top .icon-wrapper img {
 #mobile-menu .menu-container {
     position: fixed;
     background-color: #f0f0f0;
-   
-    box-shadow: -9px 0px 76px -49px rgba(0,0,0,0.46);
 
+    
+    box-shadow: none;
     top: 0;
     right: 0;
     bottom: 0;
@@ -81,12 +89,14 @@ header .top .icon-wrapper img {
     padding-top: 120px;
     padding-right: 40px;
     /* animations */
-    transform: translateX(100%); 
+    transform: translateX(100%);
     transition: transform 200ms ease;
 }
 
 #mobile-menu.open .menu-container {
     transform: translateX(0%);
+    box-shadow: -9px 0px 100px -49px 
+    
 }
 
 
@@ -115,45 +125,63 @@ header .bottom ul {
     align-items: center;
     justify-content: center;
     height: 100%;
+    
 }
 
 header .bottom ul li {
-    margin-left: 15px;
-    font-size: 20px;
-    font-family: 'Open Sans', sans-serif;
+    margin-left: 40px;
+    font-size: 28px;
+    font-family: 'webfont';
+    text-transform: uppercase;
 }
 
 /* BANNER IMAGE */
 .header-img {
-    position: relative;
-    background-color: palevioletred;
+    /* position: relative; */
+    /* background-color: palevioletred; */
     height: 400px;
-    overflow: hidden;
+    width: 100%;
+    background-image: cover;
+    background-size: cover;
+    background-image: url('images/mainbanner.png');
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+
+
 
 }
 
 .header-img img {
     z-index: -1;
     /* width: 100%; */
+    /* height: 100%; */
+    background-image: cover;
+    background-position: center;
     height: 100%;
-    align-content: center;
-    max-width: 100%;
+    position: absolute;
 }
+
 
 .header-img-text {
     font-size: 48px;
     font-family: 'Open Sans', sans-serif;
     color: white;
-    margin-left: 50px;
-    margin-top: 20%;
+    position: relative;
+
     text-shadow: 2px 2px 9px #190B07;
 }
 
 .header-img h1 {
     z-index: 1;
     position: absolute;
-    top: 50px;
-    transform: translateY(-50%);
+    bottom: 30px;
+    left: 50px;
+    /* top: 280px; */
+
+    /* margin-top: 50px; */
+
+    /* transform: translateY(-50%); */
 }
 
 /* BELOW BANNER TEXT */
@@ -181,6 +209,7 @@ header .bottom ul li {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
+
 /* 3 BOXES */
 .three-boxes {
     display: flex center;
@@ -196,6 +225,7 @@ header .bottom ul li {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
+
 .card-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -206,14 +236,18 @@ header .bottom ul li {
     width: 100%;
 }
 
-.take-action-div{
+.take-action-div {
     align-items: flex center;
 }
-.take-action {
+
+.take-action { 
     font-size: 25px;
     padding: 20px 40px;
     background-color: orange;
-    margin: 50%;
+    display: block;
+    text-align: center;
+    width: 200px; /*needed a width, otherwise stretches to entire screen*/
+    margin: auto; /*works on a block element*/
 }
 
 
@@ -228,13 +262,13 @@ footer .top {
     justify-content: center;
 }
 
-.footer-header{
+.footer-header {
     font-size: 28;
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
 
-.contact-container{
+.contact-container {
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -245,7 +279,7 @@ footer .main {
 
     font-family: 'Open Sans', sans-serif;
     color: white;
-    
+
 }
 
 footer left .inner-main {
@@ -291,14 +325,17 @@ footer .footer-bottom ul {
     .mobile-menu {
         display: none;
     }
+
     #hamburger-icon {
         display: none !important;
     }
+
     #mobile-menu .menu-container {
         display: none !important;
     }
+
     .three-boxes {
-        display: flex !important; 
+        display: flex !important;
         justify-content: space-between;
         margin: 50px 40px;
     }
