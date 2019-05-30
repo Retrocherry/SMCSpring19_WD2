@@ -219,9 +219,10 @@ header .bottom ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
+    background-color: #e6ad23; 
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
@@ -242,11 +243,13 @@ header .bottom ul li {
     display: flex center;
     justify-content: space-between;
     margin: 50px 40px;
+    
 }
 
 .three-boxes .card {
     width: 300px; /* mobile */
     margin: auto;
+   
 }
 
 .card-subHeading {
@@ -262,6 +265,9 @@ header .bottom ul li {
 
 .three-boxes .card img {
     width: 100%;
+    box-shadow: 0px 10px 44px -17px rgba(0,0,0,0.75);
+    /* border-radius: 15px 50px 30px 5px;  */
+    border-radius: 15px 5px 15px 5px; 
 }
 
 .take-action-div {
@@ -271,11 +277,14 @@ header .bottom ul li {
 .take-action { 
     font-size: 25px;
     padding: 20px 40px;
-    background-color: orange;
+    background-color: #e6ad23;
     display: block;
+    font-family: 'webfont';
+    color: white;
     text-align: center;
     width: 200px; /*needed a width, otherwise stretches to entire screen*/
     margin: auto; /*works on a block element*/
+    box-shadow: 0px 10px 44px -17px rgba(0,0,0,0.75);
 }
 
 
