@@ -1,0 +1,8 @@
+
+.donate-amount-container{
+    display: flex;
+}
+
+.donate-amount-container .right img {
+    display: none;
+}
