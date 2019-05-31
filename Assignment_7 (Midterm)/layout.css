@@ -1,0 +1,418 @@
+
+
+.container {
+    margin: auto;
+    /* background-color: #f6f6f6; */
+    size: 75%;
+}
+
+.floater-section {
+    float: left;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.image-header {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+}
+
+.page-header {
+}
+
+.body-header{
+    color: #e5a946;
+    font-family: 'bitter', normal;
+    font-size: 42px;
+    margin-left: 40px;
+    padding: 0px;
+    margin-bottom: 0%;
+}
+
+.dodger-header{
+    color: dodgerblue;
+    font-family: 'bitter', normal;
+    font-size: 42px;
+    margin-left: 40px;
+    padding: 0px;
+    margin-bottom: 0%;
+}
+
+.quoteimage {
+    color: gray;
+    font-family: 'bitter', bold;
+    font-size: 32px;
+    margin-left: 0px;
+    padding: 0px;
+    margin-bottom: 0%; 
+    position: center justify;
+    size: 100px;
+}
+
+.quotelogo{
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    display: trans
+    width: 75%;
+}
+
+
+.text-on-image {
+    position: absolute;
+    text-align: left;
+    font-size: 20px;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+/* .text-on-image h3 {
+    font
+} */
+
+
+.image-link {
+    position: absolute;
+    bottom: 0px;
+    right: -25px;
+    box-shadow: 1px 2px 20px rgba(24, 24, 31, .50);
+    /* border: 1px solid green; */
+}
+
+.image-link a {
+    /* border: 3px solid orange; */
+}
+
+
+.centered-content {
+    text-align: center;
+}
+.inline-content {
+    display: block;
+    width: 100%;
+}
+.inline-content img {
+    width: 100%;
+}
+
+.side-by-side-left, .side-by-side-right {
+    width: 100%;
+}
+
+
+
+.body-textContainer{
+    min-width: 140%;
+}
+
+.inner-container {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+
+.img-container-justifyright{
+    padding: 20px;
+    display: inline-block;
+    border-image-repeat: dd;
+    width: 35%;
+}
+.img-container-justifyright img {
+    width: 100% !important;
+    vertical-align: top;
+}
+
+
+/* body {
+    background-color: red;
+} */
+
+nav.navbar ul {
+    display: none;
+}
+#navbar_small {
+    visibility: hidden;
+}
+#navbar_small, .menu-on {
+    display: inline-block;
+    position: absolute;
+    top: 20%;
+    right: 30px;
+}
+.menu-on {
+
+}
+
+#logo_large {
+    display: none;
+}
+#logo_small {
+    display: block;
+}
+
+  
+nav.hamburger-nav {
+    background-color: #000;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    width: 100%;
+    z-index: 902;
+    display: none;
+    text-align: center;
+}
+  
+nav.hamburger-nav a {
+    display: block;
+    padding: 5px 10px;
+}
+
+#navbar_small:checked ~ nav.hamburger-nav {
+    display: block;
+} 
+  
+#navbar_small:checked ~ .menu-off {
+    display: block;
+}
+  
+.img-container {
+    text-align: center;
+    position: relative;
+      
+}
+.quoteimage {
+    text-align: center;
+    /* width: 75%; */
+}
+
+/* FOOTER */
+footer {
+    background-image: url('images/footer.png');
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    max-width: 100%;
+    text-align: center;
+    font-size: 80%;
+    padding-bottom: 20px;
+    
+}
+
+footer .footer-text {
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+footer .footer-text #social-media {
+    position: absolute;
+    bottom: 0;
+}
+
+.topbanner {
+    height: 40px !important;
+    font-size: 18px !important;
+}
+
+/*************SMALL SCREENS********************/
+@media (min-width: 520px){
+    /* body {
+        background-color: blue;
+    } */
+
+    .image-link {
+        bottom: -20;
+    }
+    
+    nav.navbar ul {
+        display: inline-block;
+        position: absolute;
+        top: 10%;
+        right: 30px;
+    }
+    #navbar_small, .menu-on {
+        display: none;
+    }
+
+    .text-on-image { 
+        font-size: 20px;
+    }
+    
+   
+
+
+    .small-width-25 {
+        width: 25%;
+    }
+    
+    .small-width-33 {
+        width: 33.3333%;
+    }
+    
+    .small-width-50 {
+        width: 50%;
+    }
+
+    .small-width-100 {
+        width: 100%;
+    }
+
+    .inline-content {
+        width: 24%;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .side-by-side-left {
+        width: 65%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .side-by-side-right {
+        width: 25%;
+        display: inline-block;
+        margin-top: 0px;
+    }
+}
+
+/*************MEDIUM SCREENS*******************/
+@media (min-width: 768px){
+    /* body {
+        background-color: orange;
+    } */
+    .image-link {
+        bottom: -20px;
+    }
+
+    #logo_large{ 
+        display: block; 
+    }
+    #logo_small { 
+        display: none; 
+    }
+    
+    .text-on-image { 
+        font-size: 30px;
+    }
+    .body-textContainer{
+        min-width: 40%;
+    }
+
+    .body-header {
+        font-size: 62px !important; 
+    }
+    .img-container-justifyright{
+        padding: 20px;
+        display: inline-block;
+        border-image-repeat: dd;
+        width: 35%;
+    }
+    .img-container-justifyright img {
+        width: 100% !important;
+        vertical-align: top;
+    }
+  
+
+
+    .med-width-25 {
+        width: 25%;
+    }
+    
+    .med-width-33 {
+        width: 33.3333%;
+    }
+
+    .med-width-50 {
+        width: 50%;
+    }
+
+    .med-width-100 {
+        width: 100%;
+    }
+
+
+    
+}
+
+/*************LARGE SCREENS*******************/
+@media (min-width: 992px){
+    /* body {
+        background-color: green;
+    } */
+
+
+
+    .img-container-justifyright{
+        padding: 20px;
+        display: inline-block;
+        border-image-repeat: dd;
+        width: 35%;
+    }
+    .img-container-justifyright img {
+        width: 100% !important;
+        vertical-align: top;
+    }
+    .body-textContainer{
+        min-width: 40%;
+    }
+
+    footer img {
+        margin-top: 30px;
+    }
+
+    .footer-text {
+        display: inline-block;
+        width: 20% !important;
+        margin: 10px !important;
+        vertical-align: top;
+    }
+    .footer-text p, .footer-text a, .footer-body-styling p {
+        font-size: 120% !important;
+    }
+
+
+
+    .container {
+        width: 100%;
+    }
+
+    .text-on-image { 
+        font-size: 40px;
+    }
+    .body-header {
+        font-size: 82px; 
+    }
+
+    .large-width-25 {
+        width: 25%;
+    }
+    
+    .large-width-33 {
+        width: 33.33333%;
+    }
+
+    .large-width-50 {
+        width: 50%;
+    }
+
+    .large-width-100 {
+        width: 100%;
+    }
+}
+
+
+
+/* .text-on-image { 
+    font-size: 34
+}
+    
+    */

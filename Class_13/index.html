@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class 13</title>
+</head>
+
+<style>
+    .container{
+        width: 500px;
+        height: 400px;
+        background-color: azure;
+    }
+
+    .blue-container{
+        background-color: dodgerblue;
+    }
+
+    .box{
+        width: 150px;
+        height: 150;
+        background-color: chartreuse;
+        display: none;
+        
+    }
+
+</style>
+
+
+
+
+<body>
+    <h1 class="header" id="topHeader"> Hello world</h1>
+
+
+
+    <button id="btn1">Append Things</button>
+    <button id="btn2">Prepend Things</button>
+
+    <button id="btn3">Remove Addons</button>
+    <button id="btn4">Empty Container</button>
+
+    <button id="colorToggle">colorToggle</button>
+
+    <div class="container">
+            I am child 1
+
+    </div>
+
+    <form action="" method="POST">
+        <input type="text" name="name" id="myName">
+        <input type="email" name="email" id="myEmail">
+
+        <select id="FX" name="effect">
+            <option value="" defualt></option>
+            <option value="show">Show an element</option>
+            <option value="hide">Hide an element</option>
+            <option value="fadeout">Fade it out</option>
+            <option value="slidedown">Slide it down</option>
+            <option value="slideup">Slide it up</option>
+        </select>
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').css('background-color', 'orange');
+            $('.header').css('color', '#fefefe');
+
+            // console.log (  $('body').css('background-color') );
+            $('#FX').change(function(){
+                var selection = $(this).val();
+
+                if(selection == "show"){
+                    $('.box').show();
+                }
+                else if (selection == 'hide'){ //we want a strict comparison ==
+                    $('.box').hide();
+                }
+                else if (selection == 'fadein'){
+                    $('.box').fadeIn(2000); //these are the milliseconds for the dealy (2000), fadeIn is prewritten by javascript and these cannot be changed
+
+                }
+                else if (selection == 'fadeout'){
+                    $('.box').fadeOut(3000);
+
+                }
+            })
+
+            $('#colorToggle').click(function(){
+                $('.container').toggleClass('blue-container');
+            })
+            
+            $('#myName').blur(function(){ //gets input
+               console.log(  $('myName').val()  );//sets value of input to the string
+
+               if ($('#myName').val() === "Gabe"{
+
+                    $('#myEmail').val('gabesilverstein@gmail.com');
+               }
+          })
+
+            //working as both a getter and a enter
+
+
+            $('#btn1').click(function(){
+                $('.container').append('<div class="container-child">I am child 2 </div>');
+                $('<div class="container-child:>I am child 4 </div>').appendTo('.container');
+                $('.container').after('<div class="addon"> I am AFTER!</div>');
+               
+            })
+
+            $('#btn2').click(function(){
+                $('.container').prepend('<div class = "container-child">I am child 3</div>');
+                $('.container').before('<div class="addon"> I am BEFORE!!!!</div>');
+                $('<div class="container-child:>I am child 5 </div>').prependTo('.container');
+
+            })
+
+
+            $('#btn3').click(function(){
+                $('.addon').remove();
+
+            })
+
+            $('#btn4').click(function(){
+                $('.container').empty();
+
+            })
+        });
+          
+            
+
+    
+    </script>
+
+
+
+</body>
+</html>

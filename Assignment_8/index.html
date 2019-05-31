@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="layout.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+
+
+    <title>Class-10-HW</title>
+</head>
+<body id="mainbody">
+
+
+    <div id="header">
+        <img class="img-header" src="images/endgamelogo.png">
+    </div>
+        
+    <h1 id="title"> Hello, world! </h1>
+
+    <button id="changeColorButton"><span>Change color</span></button>
+    <button id="hideHeader"><span>Snap yo fingers</span></button>
+    <button id="changeFont"><span>Add some style</span></button>
+    <button id="backgroundImage"><span>Add some context</span></button> 
+        
+    <h2> Avenger's odds of winning live calculator: <span id="numberBox"></span> </h2>
+
+    <script>
+        document.getElementById("title").innerHTML = "Film grosses 1 Billion dollars in opening weekend, smashes records.";
+    </script>
+    
+    
+    <script>
+        var numberSpan = document.getElementById("numberBox");
+        var hideHeader = document.getElementById("hideHeader");
+        var header = document.getElementById("header");
+        var changeFontbtn = document.getElementById("changeFont");
+        var changeBackgroundbtn = document.getElementById("backgroundImage");
+
+
+        var randomNumber = Math.random(0);
+        numberSpan.innerText = randomNumber;
+    
+
+        var changeBackground = function(){
+            var redColor = Math.random()*255;
+            var greenColor = Math.random()*255;
+            var blueColor = Math.random()*255;
+
+
+            var textColor = "rgb(" + redColor + "," + greenColor + "," + blueColor + ")";
+            console.log(textColor);
+
+            var subHeader = numberSpan.parentElement;
+
+            //subHeader.style.color = textColor;
+            var body = document.getElementById("mainbody");
+
+            body.style.backgroundColor = textColor;     
+        }
+
+
+        var toggleHeader = function(){
+            var headerDisplay = header.style.display; // block, none
+
+            if (headerDisplay === 'none') { // Hidden
+                // Unhide
+                header.style.display = "block";
+            } else { // All other cases, i.e. 'headerDisplay' does equal 'none'
+                header.style.display="none";
+            }
+        }
+
+
+        var changeFont = function(){
+            var body = document.getElementById("mainbody");
+            
+
+            var font = body.style.fontFamily; // block, none
+
+            if (font === '') { // Hidden
+                // Unhide
+                body.style.fontFamily = "Gugi";
+            } else { // All other cases, i.e. 'headerDisplay' does equal 'none'
+                body.style.fontFamily="";
+            }
+        }
+
+        var changeBackgroundImage = function(){
+            var body = document.getElementById("mainbody");
+
+            var bgImage = body.style.backgroundImage; // block, none
+
+            if (bgImage === '') { // Hidden
+                // Unhide
+                body.style.backgroundImage = "url(https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)";
+            } else { // All other cases, i.e. 'headerDisplay' does equal 'none'
+                 body.style.backgroundImage="";
+            }
+        }
+
+
+        var myButton = document.getElementById("changeColorButton");
+
+        
+/*ADD EVENT LISTENERS*/
+        myButton.addEventListener("click", changeBackground);
+        hideHeader.addEventListener("click", toggleHeader);
+        changeFontbtn.addEventListener("click", changeFont);
+        changeBackgroundbtn.addEventListener("click", changeBackgroundImage);
+        changeBackground();
+
+
+    </script>
+   
+
+</body>
+</html>
+
+
+
+
+
