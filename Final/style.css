@@ -23,6 +23,22 @@ a {
     text-decoration: none;
 }
 
+a:hover{
+    
+}
+
+a.ex1:hover, a.ex1:active {
+    color: red;
+  }
+  
+  a.take-action:hover  {
+    background-color: #f9c244;
+  }
+
+  a.take-action:active{
+    background-color: #c19020;
+  }
+
 
 header {
     padding: 0 20px;
@@ -139,9 +155,9 @@ header .bottom .desktop-menu {
     display: none;
 }
 
-/* .logo{
-    width: 90px;
-} */
+.logo{
+    
+}
 
 header .bottom ul {
     display: flex;
@@ -191,7 +207,10 @@ header .bottom ul li {
 
 
 .header-img-text {
-    font-size: 48px;
+    font-size: 56px;
+    /* font-family: 'webfont';
+    letter-spacing: 50x;
+    text-transform: uppercase; */
     font-family: 'Open Sans', sans-serif;
     color: white;
     position: relative;
@@ -219,10 +238,10 @@ header .bottom ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: #f7f7f7; */
-    background-color: #e6ad23; 
+    background-color: #f3f0e9;
+    /* background-color: #e6ad23;  */
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
 }
@@ -235,7 +254,10 @@ header .bottom ul li {
 
 .learn-header {
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'webfont';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
 }
 
 /* 3 BOXES */
@@ -253,8 +275,11 @@ header .bottom ul li {
 }
 
 .card-subHeading {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 26px;
+    font-family: 'webfont';
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .card-text {
@@ -277,6 +302,7 @@ header .bottom ul li {
 .take-action { 
     font-size: 25px;
     padding: 20px 40px;
+    border-radius: 15px 5px 15px 5px;
     background-color: #e6ad23;
     display: block;
     font-family: 'webfont';
@@ -413,6 +439,12 @@ footer .footer-bottom ul {
         justify-content: space-between; */
         margin: auto;
     }
+
+    .three-boxes .card {
+       /* height: 100px; mobile */
+        /* margin: auto; */
+       
+    }
 }
 
 
@@ -453,5 +485,23 @@ footer .footer-bottom ul {
             justify-content: space-between;
             /* margin: 50px 40px; */
         }
+        .three-boxes .card img {
+           
+            box-shadow: 0px 10px 44px -17px rgba(0,0,0,0.75);
+            /* border-radius: 15px 50px 30px 5px;  */
+            border-radius: 15px 5px 15px 5px; 
+        }
     }
+
+    /************* VERY LARGE SCREENS*******************/
+    @media (min-width: 1400px) {
+        .three-boxes .card {
+            width: 30%; 
+        }
+        .three-boxes {
+            display: flex !important;
+            justify-content: space-between;
+            /* margin: 50px 40px; */
+        }
+
         
