@@ -45,13 +45,30 @@ header .top {
     margin: 0;
     background-color: black;
     padding: 0 20px;
+    height: 25px;
 }
 
 header .top li {
     margin-left: 10px;
     font-size: 17px;
     font-family: 'webfont';
+    color: white;
+    
 }
+
+.contact{
+    top: 102px;
+   
+}
+
+
+header .top .icon-wrapper-flag{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
 
 header .top .icon-wrapper {
     display: flex;
@@ -73,32 +90,35 @@ header .top .icon-wrapper img {
     width: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: 10001;
     position: fixed;
     right: 20px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #e6ad23;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 5px 15px 5px;
+    box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.51);
 }
 
-#circle {
-    width: 100px;
-    height: 100px;
-    background: red;
-    border-radius: 50%
-}
+
 
 #mobile-menu #hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
+    width: 30px;
+    height: 3px;
+    border-radius: 15px 5px 15px 5px;
+    background-color: white;
     margin-bottom: 4px;
+    
 }
 
-#mobile-menu #hamburger-icon span #circle {
+/* #mobile-menu #hamburger-icon span  {
     width: 100px;
     height: 100px;
-    background: red;
-    border-radius: 50%
-}
+   \
+} */
 
 #mobile-menu .menu-container {
     position: fixed;
@@ -124,7 +144,7 @@ header .top .icon-wrapper img {
 
 #mobile-menu.open .menu-container {
     transform: translateX(0%);
-    box-shadow: -9px 0px 100px -49px
+    box-shadow: -9px 0px 100px -49px;
 }
 
 
@@ -200,18 +220,59 @@ header .bottom ul li {
     background-image: cover;
     background-size: cover;
 
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.73));
-    /* background-image: url('images/mainbanner-2.png');    */
+
+
+
     background-repeat: no-repeat;
     position: relative;
     background-position: center;
+}
 
+.header-img .gradient-overlay {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.02), rgba(0, 0, 0, 0.73));
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
+#home-header-img {
+    background-image: url('images/mainbanner-2.png');
 
 }
 
+
+#blog-header-img {
+    background-image: url('images/blog.jpg');
+}
+
+/* * { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+} */
+
+
+#about-header-img {
+    background-image: url('images/mainbanner-2.png');
+}
+
+
 .header-img img {
     z-index: -1;
+
     /* width: 100%; */
     /* height: 100%; */
     background-image: cover;
@@ -240,7 +301,7 @@ header .bottom ul li {
     text-transform: uppercase; */
     font-family: 'Open Sans', sans-serif;
     color: white;
-    position: relative;
+    /* position: relative; */
     position: absolute;
     bottom: 30px;
     left: 50px;
@@ -327,11 +388,6 @@ header .bottom ul li {
     /* overflow: hidden; */
 }
 
-
-
-
-
-
 /* 
 .three-boxes .card img:hover{
     transform: scale(1.1);
@@ -339,6 +395,10 @@ header .bottom ul li {
     
 
 } */
+
+
+
+
 
 
 .take-action-div {
@@ -567,3 +627,4 @@ footer .footer-bottom ul {
         justify-content: space-between;
         /* margin: 50px 40px; */
     }
+}

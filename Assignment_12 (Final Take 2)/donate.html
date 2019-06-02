@@ -8,7 +8,9 @@
     <title>Animal Defenders International : ADI Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="donate.css">
-    <style> @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap'); </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+    </style>
 
 </head>
 
@@ -55,39 +57,182 @@
         </div>
     </header>
 
-    <div class="header-img">
-        <!-- <img src="images/mainbanner.png" alt=""> -->
-        <h1 class="header-img-text">We help animals around the world.</h1>
+    <div id="home-header-img" class="header-img">
+            <div class="gradient-overlay">
+    
+            </div>
+       
+        <h1 class="header-img-text">Donate to a worthy cause.</h1>
     </div>
 
-   
 
-<div class="donate-amount-container">
-    <div class="left">
-        <p>laieuwfghaiuehgiaughfaiu ehiuaehg iuahgd</p>
-        <div class="payment-amount">
-            <input type="checkbox" id="ten">
-            <label for="ten">$10</label>
 
-            <input type="checkbox" id="ten">
-            <label for="ten">$10</label>
+    <div class="donate-amount-container">
+        <div class="left">
+            <p>laieuwfghaiuehgiaughfaiu ehiuaehg iuahgd</p>
+            <div class="payment-amount">
+                <div>
+                    <input type="radio" name="donate-amount" id="ten" class="donate-btn">
+                    <label class="donate-amount-lbl" for="ten">$10</label>
+                </div>
 
-            <input type="checkbox" id="ten">
-            <label for="ten">$10</label>
+                <div>
+                    <input type="radio" name="donate-amount" checked="true" id="twenty" class="donate-btn">
+                    <label class="donate-amount-lbl" for="twenty">$10</label>
 
-            <input type="checkbox" id="ten">
-            <label for="ten">$10</label>
+                </div>
 
-            <input type="checkbox" id="ten">
-            <label for="ten">$10</label>
+                <div>
+
+                    <input type="radio" name="donate-amount" id="thrity" class="donate-btn">
+                    <label class="donate-amount-lbl" for="thrity">$10</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="donate-amount" id="fivty" class="donate-btn">
+                    <label class="donate-amount-lbl" for="fivty">$10</label>
+
+                </div>
+
+                <div>
+                    <input type="radio" name="donate-amount" id="one-fifty" class="donate-btn">
+                    <label class="donate-amount-lbl" for="one-fifty">$10</label>
+
+                </div>
+            </div>
+
         </div>
+        <div class="right">
+            <img src="images/logo.png">
 
+        </div>
     </div>
-    <div class="right">
-        <img src="images/logo.png">
 
+
+    <div class="donor-info-form">
+
+        <form>
+            <div class="row-container">
+
+                <label for="f-name" class="form-info">First Name</label>
+                <input type="text" id="f-name" placeholder="First Name" class="donor-info-input">
+
+                <label for="l-name" class="form-info">Last Name</label>
+                <input type="text" id="l-name" placeholder="Last Name" class="donor-info-input">
+            </div>
+
+            <div class="row-container">
+
+                <label for="address" class="form-info">Address</label>
+                <input type="text" id="address" placeholder="Address" class="donor-info-input">
+
+                <label for="address-two" class="form-info">Address 2</label>
+                <input type="text" id="address-two" placeholder="Address 2" class="donor-info-input">
+
+            </div>
+
+            <div class="row-container">
+
+
+                <label for="city" class="form-info">City</label>
+                <input type="text" id="city" placeholder="City" class="donor-info-input">
+
+                <label for="state" class="form-info">State</label>
+                <select class="select-state" id="state" name="billing.address.state" aria-required="true">
+                    <option value="0"></option>
+                    <option value="None">None</option>
+                    <option value="AK">AK</option>
+                    <option value="AL">AL</option>
+                    <option value="AR">AR</option>
+                    <option value="AZ">AZ</option>
+                    <option value="CA">CA</option>
+                    <option value="CO">CO</option>
+                    <option value="CT">CT</option>
+                    <option value="DC">DC</option>
+                    <option value="DE">DE</option>
+                    <option value="FL">FL</option>
+                    <option value="GA">GA</option>
+                    <option value="HI">HI</option>
+                    <option value="IA">IA</option>
+                    <option value="ID">ID</option>
+                    <option value="IL">IL</option>
+                    <option value="IN">IN</option>
+                    <option value="KS">KS</option>
+                    <option value="KY">KY</option>
+                    <option value="LA">LA</option>
+                    <option value="MA">MA</option>
+                    <option value="MD">MD</option>
+                    <option value="ME">ME</option>
+                    <option value="MI">MI</option>
+                    <option value="MN">MN</option>
+                    <option value="MO">MO</option>
+                    <option value="MS">MS</option>
+                    <option value="MT">MT</option>
+                    <option value="NC">NC</option>
+                    <option value="ND">ND</option>
+                    <option value="NE">NE</option>
+                    <option value="NH">NH</option>
+                    <option value="NJ">NJ</option>
+                    <option value="NM">NM</option>
+                    <option value="NV">NV</option>
+                    <option value="NY">NY</option>
+                    <option value="OH">OH</option>
+                    <option value="OK">OK</option>
+                    <option value="OR">OR</option>
+                    <option value="PA">PA</option>
+                    <option value="RI">RI</option>
+                    <option value="SC">SC</option>
+                    <option value="SD">SD</option>
+                    <option value="TN">TN</option>
+                    <option value="TX">TX</option>
+                    <option value="UT">UT</option>
+                    <option value="VA">VA</option>
+                    <option value="VT">VT</option>
+                    <option value="WA">WA</option>
+                    <option value="WI">WI</option>
+                    <option value="WV">WV</option>
+                    <option value="WY">WY</option>
+                    <option value="AS">AS</option>
+                    <option value="FM">FM</option>
+                    <option value="GU">GU</option>
+                    <option value="MH">MH</option>
+                    <option value="MP">MP</option>
+                    <option value="PR">PR</option>
+                    <option value="PW">PW</option>
+                    <option value="VI">VI</option>
+                    <option value="AA">AA</option>
+                    <option value="AE">AE</option>
+                    <option value="AP">AP</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                    <option value="MB">MB</option>
+                    <option value="NB">NB</option>
+                    <option value="NL">NL</option>
+                    <option value="NS">NS</option>
+                    <option value="NT">NT</option>
+                    <option value="NU">NU</option>
+                    <option value="ON">ON</option>
+                    <option value="PE">PE</option>
+                    <option value="QC">QC</option>
+                    <option value="SK">SK</option>
+                    <option value="YT">YT</option>
+                </select>
+            </div>
+
+
+
+
+            <input type="checkbox" id="accept-email">
+            <label for="accept-email">Send me email about important conservation news and how I can help ADI protect
+                animals on Earth.</label>
+
+
+        </form>
     </div>
-</div>
+
+
+
+
 
 
 
@@ -110,12 +255,13 @@
             <div class="left inner-main">
                 <img src="images/logo-footer.png" alt="ADi">
 
-                <p>Animal Defenders International (ADI) is a 501(c)(3) non-profit organization with the promise to lobby and protect suffering animals worldwide. </p>
+                <p>Animal Defenders International (ADI) is a 501(c)(3) non-profit organization with the promise to lobby
+                    and protect suffering animals worldwide. </p>
                 <p> Store Terms | Accessibility</p>
             </div>
 
             <div class="right inner-main">
-                <h2 class = "footer-header">Contact (USA)</h2>
+                <h2 class="footer-header">Contact (USA)</h2>
                 <ul class="contact-container">
                     <li><img src="" alt=""> 6100 Wilshire Boulevard, #1150 Los Angeles, CA 90048</li>
                     <li><img src="" alt=""> Tel: +1 323-935-2234</li>

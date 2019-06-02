@@ -1,8 +1,51 @@
 
 .donate-amount-container{
     display: flex;
+    margin-bottom: 30px;
 }
 
 .donate-amount-container .right img {
     display: none;
+}
+
+
+.payment-amount {
+    display: flex;
+}
+.donate-amount-lbl {
+    background-color: orange;
+    padding: 10px;
+}
+
+.donate-btn {
+    display: none;
+}
+.donate-btn:checked + .donate-amount-lbl {
+    background-color: blue;
+}
+
+
+
+.donor-info-form .row-container {
+    display: flex;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.donor-info-form .row-container label {
+    width: 100px;
+}
+
+.donor-info-form .row-container input:first-of-type {
+margin-right: 10px;
+}
+
+.donor-info-form .row-container input, .donor-info-form .row-container select {
+    flex: 1;
+}
+
+.donor-info-form .row-container input {
+    outline: none;
+    padding: 0 10px;
+    height: 30px;
 }

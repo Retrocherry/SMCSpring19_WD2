@@ -1,8 +1,6 @@
 var hamburgerIcon = $('#hamburger-icon');
 var mobileMenuContainer = $('#mobile-menu');
 
-console.log(hamburgerIcon);
-
 // Mobile Menu Handler
 hamburgerIcon.click(toggleMobileMenu);
 
