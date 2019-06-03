@@ -299,7 +299,7 @@ header .bottom ul li {
 
 
 .header-img-text {
-    font-size: 56px;
+    font-size: 48px;
     /* font-family: 'webfont';
     letter-spacing: 50x;
     text-transform: uppercase; */
@@ -527,8 +527,9 @@ footer .footer-bottom ul {
 
 /*************SMALL SCREENS********************/
 @media (min-width: 520px) {
-
-
+    .header-img-text {
+        font-size: 48px;
+    }
     .three-boxes .card {
         width: 400px;
         /* mobile */
@@ -548,11 +549,16 @@ footer .footer-bottom ul {
 
 
 /* nav breakpoint*/
-@media (min-width: 666px) {
+@media (min-width: 792px) {
     .desktop-menu {
         display: block !important;
     }
-
+    #logo-big {
+        display: inline-block;
+    }
+    #logo-small{
+        display: none;
+    }
     .mobile-menu {
         display: none;
     }
@@ -573,12 +579,7 @@ footer .footer-bottom ul {
     background-color: orange;
 } */
 
-    #logo-big {
-        display: inline-block;
-    }
-    #logo-small{
-        display: none;
-    }
+   
     .blog-side-img{
         display: block !important;
     }
