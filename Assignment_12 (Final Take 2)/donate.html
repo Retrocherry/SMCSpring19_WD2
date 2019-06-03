@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="donate.css">
     <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="blog.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
     </style>
@@ -17,20 +18,22 @@
 
 <body>
     <header>
-            <ul class="top">
-                    <li> <img class="icon-wrapper-flag" src="images/icons/usa.png" alt="">USA</li>
-                    <!-- <li> <img class="icon-wrapper" src="images/icons/usa.png" alt="">USA</li>
+        <ul class="top">
+            <li> <img class="icon-wrapper-flag" src="images/icons/usa.png" alt="">USA</li>
+            <!-- <li> <img class="icon-wrapper" src="images/icons/usa.png" alt="">USA</li>
                     <li> <img class="icon-wrapper" src="images/icons/usa.png" alt="">USA</li> -->
-                    <li class="contact"> Contact</li>
-                    <li>
-                        <ul class="icon-wrapper">
-                            <li> <a href="https://www.facebook.com/AnimalDefenders" target="_blank"><img
-                                        src="images/icons/fb.png"></a></li>
-                            <li> <a href="https://twitter.com/AnimalDefenders" target="_blank"> <img src="images/icons/twtr.png"></a></li>
-                            <li> <a href="https://www.youtube.com/animaldefenders" target="_blank"><img src="images/icons/yt.png"target="_blank"></a></li>
-                        </ul>
-                    </li>
+            <li class="contact"> Contact</li>
+            <li>
+                <ul class="icon-wrapper">
+                    <li> <a href="https://www.facebook.com/AnimalDefenders" target="_blank"><img
+                                src="images/icons/fb.png"></a></li>
+                    <li> <a href="https://twitter.com/AnimalDefenders" target="_blank"> <img
+                                src="images/icons/twtr.png"></a></li>
+                    <li> <a href="https://www.youtube.com/animaldefenders" target="_blank"><img
+                                src="images/icons/yt.png" target="_blank"></a></li>
                 </ul>
+            </li>
+        </ul>
 
         <div class="bottom">
             <!-- <img  src="images/logo.gif" alt="Adi"> -->
@@ -50,10 +53,10 @@
                 </div>
 
                 <ul class="menu-container">
-                    <li> <a href="index.html" class="desktop-menu-item active ">Home</a></li>
+                    <li> <a href="index.html" class="desktop-menu-item">Home</a></li>
                     <li> <a href="about.html" class="desktop-menu-item">About</a></li>
                     <li> <a href="blog.html" class="desktop-menu-item">Blog</a></li>
-                    <li> <a href="donate.html" class="desktop-menu-item">Donate</a></li>
+                    <li> <a href="donate.html" class="desktop-menu-item active">Donate</a></li>
                 </ul>
             </div>
 
@@ -68,12 +71,14 @@
         </div>
     </header>
 
-    <div id="home-header-img" class="header-img">
+    <div id="donate-header-img" class="header-img">
         <div class="gradient-overlay">
 
         </div>
 
         <h1 class="header-img-text">Donate to a worthy cause.</h1>
+        <p class="header-img-subtext">Every donation helps</p>
+
     </div>
     <!-- RIGHT SIDE IMAGES -->
     <aside class="donate-side-img">
@@ -113,7 +118,7 @@
             <div class="payment-amount">
                 <div>
                     <input type="radio" name="donate-amount" id="ten" class="donate-btn">
-                    <label class="donate-amount-lbl" for="ten">$10</label>
+                    <label class="donate-amount-lbl" class="donate-amount-text" for="ten">$10</label>
                 </div>
 
                 <div>
@@ -543,27 +548,55 @@
             <div class="row-container">
                 <label for="creditPayment" class="form-info">Credit/Debit <img src="/images/icons/fb.png"
                         alt=""></label>
-                <input type="radio" id="creditPayment" placeholder="Credit/Debit" class="donor-info-input">
+                <input type="radio" name="radAnswer" id="creditPayment" placeholder="Credit/Debit"
+                    class="donor-info-input">
 
                 <label for="creditPayment" class="form-info">Paypal <img src="/images/icons/fb.png" alt=""></label>
-                <input type="radio" id="creditPayment" placeholder="Credit/Debit" class="donor-info-input">
+                <input type="radio" name="radAnswer" id="creditPayment" placeholder="Credit/Debit"
+                    class="donor-info-input">
 
-                <label for="creditayment" class="form-info">Amazon Pay <img src="/images/icons/fb.png" alt=""></label>
-                <input type="radio" id="creditPayment" placeholder="Credit/Debit" class="donor-info-input">
+                <label for="creditayment"> <img src="/images/icons/fb.png" class="form-info">Amazon Pay </label>
+                <input type="radio" name="radAnswer" id="creditPayment" placeholder="Credit/Debit"
+                    class="donor-info-input">
             </div>
 
             <div class="row-container">
+                <label for="f-email" class="form-info">Credit Card Number</label>
+                <input type="text" id="f-cc" placeholder="Credit Card Number" class="donor-info-input">
 
 
+                <label for="country" class="form-info">Exp Date</label>
+                <select class="select-month" id="country" name="billing.address.country" aria-required="true">
+                    <option value="0"></option>
+                    <option value="None">None</option>
+                    <option value="United States">United States</option>
 
+                 <label for="country" class="form-info">Exp Date</label>
+                <select class="select-year" id="year" name="creditcard.date" aria-required="true">
+                    <option value="0"></option>
+                    <option value="None"></option>
+                    <option value="United States"></option>
+
+                    
 
             </div>
 
+            <button class="donate-submit">
+
+
+            </button>
 
 
         </form>
 
-
+        <aside class="blog-side-img">
+                <img src="images/logo-2.png" alt="">
+                <img src="images/icons/fb.png" alt="">
+    
+                <!-- Right side bar elements go here -->
+    
+    
+            </aside>
 
 
 
@@ -625,6 +658,53 @@
         integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
     <script src="index.js"></script>
+    <script>
+        var creditCard = $('#view-more');
+        var Paypal = $('#image-gallery');
+        var Amazon = $('#image-gallery');
+
+        viewMoreBtn.click(function () {
+
+            // Adds html
+            imageGallery.append(htmlImgGallery);
+
+
+            // Removes event listener, this way, when you click on the view more
+            // button, nothing happens
+            viewMoreBtn.unbind('click');
+        });
+
+        function htmlImgGallery() {
+            var html = `
+                <div class="three-boxes">
+                        <div class="card">
+                            <img src="images/about/insta1.png" alt="">
+                           
+                        </div>
+                
+                        <div class="card">
+                            <img src="images/about/insta2.png" alt="">
+                            
+                        </div>
+                
+                        <div class="card">
+                        
+                                <img src="images/about/insta3.png" alt="">
+                      
+                    </div>
+                
+                
+                </div>
+    
+                
+                   
+                `
+
+            return html;
+        }
+    </script>
+
+
 
 </body>
 

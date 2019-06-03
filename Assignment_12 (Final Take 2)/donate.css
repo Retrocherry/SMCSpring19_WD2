@@ -1,28 +1,31 @@
 /* TYPOGRAPHY :: MAIN DONATE PAGE */
 
-.donate-header{
+.donate-header {
     font-size: 48px;
     font-family: 'webfont';
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 5px;
+    margin-left: 30px;
 }
 
-.donate-subheader{
+.donate-subheader {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20pt;
-    
+    margin: auto;
+    margin-left: 50px;
+
 }
 
-.donate-copy{
+.donate-copy {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20pt;
 }
 
 /* TYPOGRAPHY :: DONOR AND PAYMENT FORMS */
-.donor-info-form-header{
+.donor-info-form-header {
     font-size: 26px;
     font-family: 'webfont';
     text-transform: uppercase;
@@ -30,7 +33,7 @@
     margin-bottom: 15px;
     margin-left: 56px;
     color: #006438;
-    
+
 }
 
 /* #accept-email{
@@ -39,16 +42,15 @@
     line-height: 20pt;  
 } */
 
-.form-info{
+.form-info {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 20pt;  
+    line-height: 20pt;
 }
 
-.donate-amount-container{
-    display: flex;
-    margin-bottom: 30px;
-    margin-left: 56px;
+.donate-amount-container {
+        display: flex; 
+        margin: auto;
     /* margin: auto; */
 }
 
@@ -62,7 +64,11 @@
 .payment-amount {
     display: flex;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20pt;
 }
+
 .donate-amount-lbl {
     background-color: #f9c244;
     padding: 10px;
@@ -71,19 +77,27 @@
     border-radius: 15px 5px 15px 5px;
     display: flex;
     margin-right: 20px;
+    margin-left: 30px;
+}
+
+.donate-amount-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20pt;
 }
 
 .donate-btn {
     display: none;
 }
-.donate-btn:checked + .donate-amount-lbl {
+
+.donate-btn:checked+.donate-amount-lbl {
     background-color: #006438;
 }
 
 .donate-btn:hover {
     background-color: #f9c244;
     /* opacity: 0.03; */
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .donate-btn:active {
@@ -91,14 +105,16 @@
 
 }
 
-.row-container{
-    margin-left: 56px;
+.row-container {
+    margin-left: 5px;
 }
+
 /* FORM INFO  STYLING */
 .donor-info-form .row-container {
     display: flex;
     width: 500px;
     margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 .donor-info-form .row-container label {
@@ -106,10 +122,11 @@
 }
 
 .donor-info-form .row-container input:first-of-type {
-margin-right: 10px;
+    margin-right: 10px;
 }
 
-.donor-info-form .row-container input, .donor-info-form .row-container select {
+.donor-info-form .row-container input,
+.donor-info-form .row-container select {
     flex: 1;
 }
 
@@ -124,7 +141,33 @@ margin-right: 10px;
 
 /* DONATE SIDE IMG */
 
-.donate-side-img{
-    border: solid red;
-    flex-direction: column;
+
+
+.donate-side-img {
+    display: none;
+}
+/* DONATE SUBMIT BUTTON */
+
+.donate-submit{
+
+}
+
+.donate-submit-btn {
+    align-items: flex center;
+}
+
+.donate-submit {
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 15px 5px 15px 5px;
+    background-color: #e6ad23;
+    display: block;
+    font-family: 'webfont';
+    color: white;
+    text-align: center;
+    width: 200px;
+    /*needed a width, otherwise stretches to entire screen*/
+    margin: auto;
+    /*works on a block element*/
+    box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
 }
