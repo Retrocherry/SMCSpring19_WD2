@@ -11,13 +11,14 @@
 .main-content {
     display: flex; 
     margin: auto;
-    width: 80%;
+    /* width: 80%; */
 }
 
 .blog-container {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 30px;
+    width: 70%;
 }
 
 .blog-card{
@@ -47,8 +48,13 @@
     line-height: 20pt;
 }
 
+.blog-side-img{
+    display: none;
+}
 
- 
+.video{
+    width: 360px;
+}
 
 aside {
 

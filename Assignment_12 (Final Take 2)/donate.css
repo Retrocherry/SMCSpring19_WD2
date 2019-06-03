@@ -33,6 +33,18 @@
     
 }
 
+/* #accept-email{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20pt;  
+} */
+
+.form-info{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20pt;  
+}
+
 .donate-amount-container{
     display: flex;
     margin-bottom: 30px;
@@ -78,11 +90,11 @@
     background-color: #c19020;
 
 }
-/* FORM STYLING */
+
 .row-container{
     margin-left: 56px;
 }
-
+/* FORM INFO  STYLING */
 .donor-info-form .row-container {
     display: flex;
     width: 500px;
@@ -105,4 +117,14 @@ margin-right: 10px;
     outline: none;
     padding: 0 10px;
     height: 30px;
+}
+
+/* DONATE AMOUNT STYLE */
+
+
+/* DONATE SIDE IMG */
+
+.donate-side-img{
+    border: solid red;
+    flex-direction: column;
 }

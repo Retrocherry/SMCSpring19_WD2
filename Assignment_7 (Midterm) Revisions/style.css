@@ -211,8 +211,7 @@ nav.navbar{
     height: 80px;
     position: relative;
     color: #fffbcc;
-    z-index: 900;
-    
+    z-index: 900;  
 }
 
 nav.navbar{

@@ -38,6 +38,17 @@ a.take-action:active {
 
 }
 
+#view-more:hover {
+    background-color: #f9c244;
+    /* opacity: 0.03; */
+    transition: 0.3s
+}
+
+#view-more:active {
+    background-color: #c19020;
+
+}
+
 
 header .top {
     display: flex;
@@ -114,6 +125,13 @@ header .top .icon-wrapper img {
 
 }
 
+#logo-big {
+    display: none;
+}
+
+#logo-big {
+    width: 50px;
+}
 /* #mobile-menu #hamburger-icon span  {
     width: 100px;
     height: 100px;
@@ -190,9 +208,7 @@ a.desktop-menu-item.active {
 }
 
 
-.logo {
-    height: 100px;
-}
+
 
 header .bottom ul {
     display: flex;
@@ -400,6 +416,28 @@ header .bottom ul li {
 
 
 
+#view-more button{
+    align-items: flex center;
+}
+
+#view-more{
+    font-size: 25px;
+    padding: 20px 40px;
+    border-radius: 15px 5px 15px 5px;
+    background-color: #e6ad23;
+    display: block;
+    font-family: 'webfont';
+    color: white;
+    text-align: center;
+    width: 200px;
+    /*needed a width, otherwise stretches to entire screen*/
+    margin: auto;
+    margin-bottom: 50px;
+    /*works on a block element*/
+    box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
+}
+
+
 
 .take-action-div {
     align-items: flex center;
@@ -509,7 +547,7 @@ footer .footer-bottom ul {
 
 
 
-/* nav */
+/* nav breakpoint*/
 @media (min-width: 666px) {
     .desktop-menu {
         display: block !important;
@@ -535,6 +573,15 @@ footer .footer-bottom ul {
     background-color: orange;
 } */
 
+    #logo-big {
+        display: inline-block;
+    }
+    #logo-small{
+        display: none;
+    }
+    .blog-side-img{
+        display: block !important;
+    }
     .med-width-25 {
         width: 25%;
     }

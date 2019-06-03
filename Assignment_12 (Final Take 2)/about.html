@@ -191,21 +191,21 @@
 
 
 
-
-
-
     <button id="view-more">
-        View More
+        View Gallery
     </button>
 
-
-
-
-
     <div class="take-action-div">
-        <a href="donate" class="take-action">Donate</a>
-    </div>
+            <a href="donate.html" class="take-action">Donate</a>
+        </div>
+    
 
+
+
+
+
+
+    
 
 
     <footer>
@@ -267,7 +267,7 @@
             imageGalary.append(htmlImgGalary);
 
 
-            // Removes event listerer, this way, when you click on the view more
+            // Removes event listener, this way, when you click on the view more
             // button, nothing happens
             viewMoreBtn.unbind('click');
         });
@@ -275,6 +275,39 @@
         function htmlImgGalary() {
             var html = `
             <div class="three-boxes">
+                    <div class="card">
+                        <img src="images/about/us.png" alt="">
+                        <div class="content">
+                            <h3 class = "card-subHeading">USA Division</h3>
+                            <p class = "card-text">The latest campaign news from our team in Los Angeles. <br><a href="#">Learn More</a></p>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                        <img src="images/about/UK.png" alt="">
+                        <div class="content">
+                            <h3 class = "card-subHeading">United Kingdom</h3>
+                            <p  class = "card-text">Find out more about the campaigns activities of our office in London, UK. <br>
+                                
+                                <a href="#">Learn More</a></p>
+                        </div>
+                    </div>
+            
+                    <div class="card">
+                    
+                            <img src="images/about/southamerica.png" alt="">
+                   
+                    
+                    <div class="content">
+                        <h3 class = "card-subHeading">South America</h3>
+                        <p class = "card-text">Keep up-to-date with the latest campaign developments from across South America.<br><a href="http://www.ad-international.org/about_us/go.php?id=2765&ssi=39">Learn More</a></p>
+                    </div>
+                </div>
+            
+            
+                </div>
+
+                <div class="three-boxes">
                     <div class="card">
                         <img src="images/about/us.png" alt="">
                         <div class="content">
