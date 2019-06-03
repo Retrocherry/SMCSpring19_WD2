@@ -18,11 +18,11 @@
     display: flex;
     flex-direction: column;
     margin: 30px;
-    width: 70%;
+    width: 80%;
 }
 
 .blog-card{
-    width: 60%;
+    width: 80%;
     /* top: 50px; */
     background-color: pink;
     margin-left: 10px;

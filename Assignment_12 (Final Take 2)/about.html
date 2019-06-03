@@ -59,7 +59,7 @@
         </div>
     </header>
 
-    <div id="home-header-img" class="header-img">
+    <div id="about-header-img" class="header-img">
             <div class="gradient-overlay">
     
             </div>
@@ -69,10 +69,10 @@
                           <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
                         </div>
                 </div>
-
+                
         </div> -->
             
-        <h1 class="header-img-text">We help animals around the world.</h1>
+        <h1 class="header-img-text">Learn how ADI campaigns to protect animal rights.</h1>
     </div>
 
 
@@ -80,7 +80,7 @@
     <h1 class="learn-header">About Us</h1>
 
 
-    <div id="image-galary">
+    <div id="image-gallery">
 
         <div class="three-boxes">
 
@@ -114,10 +114,6 @@
 
 
         </div>
-
-
-
-
 
         <div class="three-boxes">
 
@@ -262,12 +258,12 @@
 
     <script>
         var viewMoreBtn = $('#view-more');
-        var imageGalary = $('#image-galary');
+        var imageGallery = $('#image-gallery');
 
         viewMoreBtn.click(function () {
 
             // Adds html
-            imageGalary.append(htmlImgGalary);
+            imageGallery.append(htmlImgGallery);
 
 
             // Removes event listener, this way, when you click on the view more
@@ -275,73 +271,51 @@
             viewMoreBtn.unbind('click');
         });
 
-        function htmlImgGalary() {
+        function htmlImgGallery() {
             var html = `
             <div class="three-boxes">
                     <div class="card">
-                        <img src="images/about/us.png" alt="">
-                        <div class="content">
-                            <h3 class = "card-subHeading">USA Division</h3>
-                            <p class = "card-text">The latest campaign news from our team in Los Angeles. <br><a href="#">Learn More</a></p>
-                        </div>
+                        <img src="images/about/insta1.png" alt="">
+                       
                     </div>
             
                     <div class="card">
-                        <img src="images/about/UK.png" alt="">
-                        <div class="content">
-                            <h3 class = "card-subHeading">United Kingdom</h3>
-                            <p  class = "card-text">Find out more about the campaigns activities of our office in London, UK. <br>
-                                
-                                <a href="#">Learn More</a></p>
-                        </div>
+                        <img src="images/about/insta2.png" alt="">
+                        
                     </div>
             
                     <div class="card">
                     
-                            <img src="images/about/southamerica.png" alt="">
-                   
-                    
-                    <div class="content">
-                        <h3 class = "card-subHeading">South America</h3>
-                        <p class = "card-text">Keep up-to-date with the latest campaign developments from across South America.<br><a href="http://www.ad-international.org/about_us/go.php?id=2765&ssi=39">Learn More</a></p>
-                    </div>
+                            <img src="images/about/insta3.png" alt="">
+                  
                 </div>
             
             
-                </div>
+            </div>
 
-                <div class="three-boxes">
+            <div class="three-boxes">
                     <div class="card">
-                        <img src="images/about/us.png" alt="">
-                        <div class="content">
-                            <h3 class = "card-subHeading">USA Division</h3>
-                            <p class = "card-text">The latest campaign news from our team in Los Angeles. <br><a href="#">Learn More</a></p>
-                        </div>
+                        <img src="images/about/insta4.png" alt="">
+                       
                     </div>
             
                     <div class="card">
-                        <img src="images/about/UK.png" alt="">
-                        <div class="content">
-                            <h3 class = "card-subHeading">United Kingdom</h3>
-                            <p  class = "card-text">Find out more about the campaigns activities of our office in London, UK. <br>
-                                
-                                <a href="#">Learn More</a></p>
-                        </div>
+                        <img src="images/about/insta5.png" alt="">
+                        
                     </div>
             
                     <div class="card">
                     
-                            <img src="images/about/southamerica.png" alt="">
+                            <img src="images/about/insta6.png" alt="">
                    
                     
-                    <div class="content">
-                        <h3 class = "card-subHeading">South America</h3>
-                        <p class = "card-text">Keep up-to-date with the latest campaign developments from across South America.<br><a href="http://www.ad-international.org/about_us/go.php?id=2765&ssi=39">Learn More</a></p>
-                    </div>
+                  
                 </div>
             
             
-                </div>
+            </div>
+
+               
             `;
 
             return html;

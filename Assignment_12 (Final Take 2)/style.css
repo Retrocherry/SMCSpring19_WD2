@@ -132,6 +132,7 @@ header .top .icon-wrapper img {
 #logo-big {
     width: 50px;
 }
+
 /* #mobile-menu #hamburger-icon span  {
     width: 100px;
     height: 100px;
@@ -208,8 +209,6 @@ a.desktop-menu-item.active {
 }
 
 
-
-
 header .bottom ul {
     display: flex;
     align-items: center;
@@ -282,7 +281,7 @@ header .bottom ul li {
 
 
 #about-header-img {
-    background-image: url('images/mainbanner-2.png');
+    background-image: url('images/about/banner-copy-about.png');
 }
 
 
@@ -299,25 +298,17 @@ header .bottom ul li {
 
 
 .header-img-text {
-    font-size: 48px;
-    /* font-family: 'webfont';
-    letter-spacing: 50x;
-    text-transform: uppercase; */
+    font-size: 38px;
     font-family: 'Open Sans', sans-serif;
     color: white;
     position: relative;
-
     text-shadow: 2px 2px 9px #190B07;
 }
 
 .header-img-subtext {
     font-size: 18px;
-    /* font-family: 'webfont';
-    letter-spacing: 50x;
-    text-transform: uppercase; */
     font-family: 'Open Sans', sans-serif;
     color: white;
-    /* position: relative; */
     position: absolute;
     bottom: 30px;
     left: 50px;
@@ -328,7 +319,7 @@ header .bottom ul li {
 .header-img h1 {
     z-index: 1;
     position: absolute;
-    bottom: 30px;
+    bottom: 80px;
     left: 50px;
     /* top: 280px; */
 
@@ -339,13 +330,16 @@ header .bottom ul li {
 
 /* BELOW BANNER TEXT */
 
-
 .header-text {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f3f0e9;
+
+   background-image: cover;
+    background-position: center;
+
     /* background-color: #e6ad23;  */
     text-align: center;
     color: black;
@@ -416,11 +410,11 @@ header .bottom ul li {
 
 
 
-#view-more button{
+#view-more button {
     align-items: flex center;
 }
 
-#view-more{
+#view-more {
     font-size: 25px;
     padding: 20px 40px;
     border-radius: 15px 5px 15px 5px;
@@ -527,9 +521,8 @@ footer .footer-bottom ul {
 
 /*************SMALL SCREENS********************/
 @media (min-width: 520px) {
-    .header-img-text {
-        font-size: 48px;
-    }
+    
+
     .three-boxes .card {
         width: 400px;
         /* mobile */
@@ -553,12 +546,15 @@ footer .footer-bottom ul {
     .desktop-menu {
         display: block !important;
     }
+
     #logo-big {
         display: inline-block;
     }
-    #logo-small{
+
+    #logo-small {
         display: none;
     }
+
     .mobile-menu {
         display: none;
     }
@@ -575,14 +571,39 @@ footer .footer-bottom ul {
 
 /*************MEDIUM SCREENS*******************/
 @media (min-width: 768px) {
+
     /* body {
     background-color: orange;
 } */
+    .header-img h1 {
+        z-index: 1;
+        position: absolute;
+        bottom: 60px;
+        left: 50px;
+        /* top: 280px; */
 
-   
-    .blog-side-img{
+        /* margin-top: 50px; */
+
+        /* transform: translateY(-50%); */
+    }
+
+    .blog-card{
+        width: 70% !important;
+        /* top: 50px; */
+        background-color: pink;
+        margin-left: 10px;
+    }
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+        width: 70% ;
+    }
+
+    .blog-side-img {
         display: block !important;
     }
+
     .med-width-25 {
         width: 25%;
     }
@@ -619,7 +640,17 @@ footer .footer-bottom ul {
 
 /*************LARGE SCREENS*******************/
 @media (min-width: 992px) {
+    .header-img h1 {
+        z-index: 1;
+        position: absolute;
+        bottom: 60px;
+        left: 50px;
+        /* top: 280px; */
 
+        /* margin-top: 50px; */
+
+        /* transform: translateY(-50%); */
+    }
 
     .text-on-image {
         font-size: 40px;
