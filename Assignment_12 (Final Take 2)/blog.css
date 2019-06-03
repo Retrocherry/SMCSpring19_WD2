@@ -17,15 +17,16 @@
 .blog-container {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 40px;
     width: 80%;
+    
 }
 
 .blog-card{
     width: 80%;
     /* top: 50px; */
     background-color: pink;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .blog-header{

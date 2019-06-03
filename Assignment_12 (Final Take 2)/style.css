@@ -75,7 +75,7 @@ header .top li {
 
 header .top .icon-wrapper-flag {
     width: 20px;
-    display: inline-block;
+    display: inline-flex;
     margin-right: 10px;
 
 }
@@ -96,6 +96,41 @@ header .top .icon-wrapper img {
     display: flex;
     align-items: center;
 }
+
+/* #hamburger-icon{
+    width: 60px;
+  
+  position: relative;
+  
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#hamburger-icon span{
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+} */
 
 #mobile-menu #hamburger-icon {
     width: 30px;
@@ -141,9 +176,11 @@ header .top .icon-wrapper img {
 
 #mobile-menu .menu-container {
     position: fixed;
-    background-color: #f0f0f0;
-
-
+    /* background-color: #f0f0f0; */
+    /* background-color: #006438; */
+    /* background-color: darkgray; */
+    background-color: rgb(44, 60, 49);
+    opacity: .95;
     box-shadow: none;
     top: 0;
     right: 0;
@@ -166,6 +203,9 @@ header .top .icon-wrapper img {
     box-shadow: -9px 0px 100px -49px;
 }
 
+/* #mobile-menu.open  #hamburger-icon span{
+   display: none;
+} */
 
 #mobile-menu .menu-container li {
     margin-bottom: 30px;
@@ -298,20 +338,21 @@ header .bottom ul li {
 
 
 .header-img-text {
-    font-size: 38px;
+    font-size: 36px;
     font-family: 'Open Sans', sans-serif;
     color: white;
     position: relative;
-    text-shadow: 2px 2px 9px #190B07;
+    text-shadow: 2px 2px 9px #190B07;   
 }
 
 .header-img-subtext {
-    font-size: 18px;
+    font-size: 26px;
+    bottom: 10%;
+    left: 30px;
     font-family: 'Open Sans', sans-serif;
     color: white;
     position: absolute;
-    bottom: 30px;
-    left: 50px;
+    
     text-shadow: 2px 2px 9px #190B07;
 
 }
@@ -319,8 +360,8 @@ header .bottom ul li {
 .header-img h1 {
     z-index: 1;
     position: absolute;
-    bottom: 80px;
-    left: 50px;
+    bottom: 40%;
+    left: 30px;
     /* top: 280px; */
 
     /* margin-top: 50px; */
@@ -328,7 +369,7 @@ header .bottom ul li {
     /* transform: translateY(-50%); */
 }
 
-/* BELOW BANNER TEXT */
+/* ******************* OUR MISSION TEXT ************************* */
 
 .header-text {
     height: 300px;
@@ -337,7 +378,7 @@ header .bottom ul li {
     justify-content: center;
     background-color: #f3f0e9;
 
-   background-image: cover;
+    background-image: cover;
     background-position: center;
 
     /* background-color: #e6ad23;  */
@@ -348,10 +389,10 @@ header .bottom ul li {
 }
 
 .header-text span {
-    width: 70%;
+    width: 90%;
 }
 
-/* HEADER FOR 3 BOXES */
+/* ******************* HEADER FOR 3 BOX LAYOUT ************************* */
 
 .learn-header {
     text-align: center;
@@ -362,7 +403,16 @@ header .bottom ul li {
 
 }
 
-/* 3 BOXES */
+.our-mission-header{
+    text-align: center;
+    font-family: 'webfont';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #727272;
+    margin: 3px;
+}
+
+/* ******************* 3 BOX LAYOUT IMAGE GRID ************************* */
 .three-boxes {
     justify-content: space-between;
     margin: 50px 40px;
@@ -408,7 +458,7 @@ header .bottom ul li {
 
 
 
-
+/* ******************* BUTTONS ************************* */
 
 #view-more button {
     align-items: flex center;
@@ -453,7 +503,7 @@ header .bottom ul li {
     box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
 }
 
-
+/* *************** FOOTER ******************* */
 footer {
     margin-top: 50px;
     background-color: #006438;
@@ -521,7 +571,7 @@ footer .footer-bottom ul {
 
 /*************SMALL SCREENS********************/
 @media (min-width: 520px) {
-    
+
 
     .three-boxes .card {
         width: 400px;
@@ -578,7 +628,7 @@ footer .footer-bottom ul {
     .header-img h1 {
         z-index: 1;
         position: absolute;
-        bottom: 60px;
+        bottom: 50%;
         left: 50px;
         /* top: 280px; */
 
@@ -586,18 +636,26 @@ footer .footer-bottom ul {
 
         /* transform: translateY(-50%); */
     }
-
-    .blog-card{
+    .header-img-subtext {
+        font-size: 26px;
+        bottom: 15%;
+        left: 50px;
+    }
+    .header-text span {
+        width: 70%;
+    }
+    .blog-card {
         width: 70% !important;
         /* top: 50px; */
         background-color: pink;
         margin-left: 10px;
     }
+
     .blog-container {
         display: flex;
         flex-direction: column;
         margin: 50px;
-        width: 70% ;
+        width: 70%;
     }
 
     .blog-side-img {
@@ -643,7 +701,7 @@ footer .footer-bottom ul {
     .header-img h1 {
         z-index: 1;
         position: absolute;
-        bottom: 60px;
+        bottom: 50px;
         left: 50px;
         /* top: 280px; */
 
@@ -651,7 +709,17 @@ footer .footer-bottom ul {
 
         /* transform: translateY(-50%); */
     }
-
+    .header-img-text {
+        font-size: 48px;
+    }
+    .header-img-subtext {
+        font-size: 26px;
+        bottom: 20px;
+        left: 50px;
+    }
+    .header-text span {
+        width: 60%;
+    }
     .text-on-image {
         font-size: 40px;
     }
