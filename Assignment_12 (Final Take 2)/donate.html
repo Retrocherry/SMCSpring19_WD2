@@ -154,8 +154,6 @@
 
 
 
-        <form>
-            <div class="row-container">
 
 
             <div class="donor-info-form">
@@ -697,6 +695,7 @@
             event.preventDefault();
             $("<div>")
                 .append("default " + event.type + " prevented")
+                .appendTo("#log");
         });
     </script>
 
