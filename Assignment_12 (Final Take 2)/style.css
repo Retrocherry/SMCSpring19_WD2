@@ -858,7 +858,7 @@ footer .footer-bottom ul {
         display: block !important;
     }
     .donate-side-img {
-        border: solid red;
+        /* border: solid red; */
         flex-direction: column;
         display: block !important;
 
