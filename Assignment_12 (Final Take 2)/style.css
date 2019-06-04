@@ -47,6 +47,8 @@ a.take-action:active {
 
 }
 
+
+
 /* ************************* NavBar (Header TOP)************************* */
 header .top {
     display: flex;
@@ -191,7 +193,8 @@ header .top .icon-wrapper img {
 /* ************************* NavBar (Header Bottom)************************* */
 
 header {
-    box-shadow: 3px 23px 21px -8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 35px 8px rgba(0,0,0,0.75);
+    
 }
 
 header .bottom {
@@ -326,7 +329,7 @@ header .bottom ul li {
 }
 
 .header-img-subtext {
-    font-size: 26px;
+    font-size: 24px;
     bottom: 10%;
     left: 30px;
     font-family: 'Open Sans', sans-serif;
@@ -689,16 +692,20 @@ footer .footer-bottom ul {
         width: 70%;
     }
 
+    .blog-header{
+        font-size: 48px !important;
+    }
+    
     /* &&&& DONATE PAGE &&&& */
     .donate-amount-lbl {
         background-color: #f9c244;
-        padding: 10px;
+        /* padding: 10px; */
         width: 50px;
         align-items: center;
         border-radius: 15px 5px 15px 5px;
         display: flex;
-        margin-right: 10px;
-        margin-left: 50px;
+       
+        
 
     }
 
@@ -708,18 +715,26 @@ footer .footer-bottom ul {
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 5px;
-        margin-left: 50px;
+        /* margin-left: 50px; */
     }
 
     .donate-subheader {
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
         line-height: 20pt;
-        margin: auto;
-        margin-left: 50px;
+        /* margin: auto; */
+        /* margin-left: 50px; */
 
     }
-
+    .donor-info-form .row-container {
+        display: flex !important;
+       
+        /* flex-wrap: wrap; */
+        width: 500px;
+        margin-bottom: 20px;
+        /* margin-left: 50px; */
+    }
+    
     .med-width-25 {
         width: 25%;
     }
@@ -767,7 +782,9 @@ footer .footer-bottom ul {
 
         /* transform: translateY(-50%); */
     }
-
+    .blog-side-img {
+        display: block !important;
+    }
     .header-img-text {
         font-size: 48px;
     }
@@ -791,14 +808,10 @@ footer .footer-bottom ul {
     }
 
     .blog-side-img {
-        display: block !important;
+        display: none !important;
     }
 
-    .donate-side-img {
-        border: solid red;
-        flex-direction: column;
-
-    }
+    
 
     .large-width-25 {
         width: 25%;
@@ -841,6 +854,15 @@ footer .footer-bottom ul {
         width: 30%;
     }
 
+    .blog-side-img {
+        display: block !important;
+    }
+    .donate-side-img {
+        border: solid red;
+        flex-direction: column;
+        display: block !important;
+
+    }
     .three-boxes {
         display: flex !important;
         justify-content: space-between;

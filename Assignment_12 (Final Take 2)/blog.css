@@ -29,8 +29,14 @@
     margin-left: 20px;
 }
 
+.blog-pic-img{
+   
+    width: 300px;
+    background-position-x: 40%;
+}
+
 .blog-header{
-    font-size: 48px;
+    font-size: 36px;
     font-family: 'webfont';
     text-transform: uppercase;
     letter-spacing: 2px;

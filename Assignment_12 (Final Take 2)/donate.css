@@ -6,15 +6,15 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 5px;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .donate-subheader {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20pt;
-    margin: auto;
-    margin-left: 50px;
+    /* margin: auto; */
+    /* margin-left: 50px; */
 
 }
 
@@ -31,16 +31,16 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    margin-left: 56px;
+    /* margin-left: 56px; */
     color: #006438;
 
 }
 
-/* #accept-email{
+.accept-email{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 20pt;  
-} */
+}
 
 .form-info {
     font-family: 'Open Sans', sans-serif;
@@ -60,15 +60,19 @@
     display: none;
 }
 
-/* FORM BUTTON STYLING*/
+/* DONATE BUTTON CLASS */
 .payment-amount {
-    display: flex;
-    margin: auto;
+    
+    /* margin: auto; */
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
     line-height: 20pt;
+   
 }
 
+/* FORM BUTTON STYLING*/
 .donate-amount-lbl {
     background-color: #f9c244;
     padding: 10px;
@@ -77,7 +81,9 @@
     border-radius: 15px 5px 15px 5px;
     display: flex;
     margin-right: 20px;
-    margin-left: 30px;
+   
+    color: white;
+    box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
 }
 
 .donate-amount-text{
@@ -94,27 +100,39 @@
     background-color: #006438;
 }
 
-.donate-btn:hover {
+.donate-submit:hover {
     background-color: #f9c244;
     /* opacity: 0.03; */
     transition: 0.3s;
 }
 
-.donate-btn:active {
+.donate-submit:active {
     background-color: #c19020;
 
 }
 
+.donate-amount-lbl:hover{
+    background-color: #f9c244;
+    /* opacity: 0.03; */
+    transition: 0.3s;
+}
+
 .row-container {
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 /* FORM INFO  STYLING */
+
+.donate-info-form{
+    
+}
 .donor-info-form .row-container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 500px;
     margin-bottom: 20px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .donor-info-form .row-container label {
@@ -148,9 +166,7 @@
 }
 /* DONATE SUBMIT BUTTON */
 
-.donate-submit{
 
-}
 
 .donate-submit-btn {
     align-items: flex center;
