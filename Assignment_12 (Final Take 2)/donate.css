@@ -49,8 +49,8 @@
 }
 
 .donate-amount-container {
-    display: flex;
-    margin: auto;
+    /* display: flex;
+    margin: auto; */
     /* margin: auto; */
 }
 
@@ -123,12 +123,12 @@
 
 /* FORM INFO  STYLING */
 
-.donate-info-form {}
 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$FLEX DIRECTION AND FELX WRAP ISSUE IS HERE */
 .donor-info-form .row-container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
     width: 500px;
     margin-bottom: 20px;
     /* margin-left: 50px; */
