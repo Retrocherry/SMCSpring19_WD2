@@ -484,10 +484,12 @@ header .bottom ul li {
 /* ******************* BUTTONS ************************* */
 
 #view-more button {
+    
     align-items: flex center;
 }
 
 #view-more {
+    
     font-size: 25px;
     padding: 20px 40px;
     border-radius: 15px 5px 15px 5px;
@@ -526,6 +528,16 @@ header .bottom ul li {
     box-shadow: 0px 10px 44px -17px rgba(0, 0, 0, 0.75);
 }
 
+/* *************** DONATE PAGE CONTAINER FOR BREAKPOINT ******************* */
+
+.donor-info-form .row-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    margin-bottom: 20px;
+    /* margin-left: 50px; */
+}
 /* *************** FOOTER ******************* */
 footer {
     margin-top: 50px;
@@ -617,7 +629,7 @@ footer .footer-bottom ul {
 
 
 
-/* nav breakpoint*/
+/*********-----------NAV BREAKPOINT----------****************/
 @media (min-width: 792px) {
     .desktop-menu {
         display: block !important;
@@ -733,8 +745,8 @@ footer .footer-bottom ul {
     .donor-info-form .row-container {
         
             display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
+                /* flex-direction: column;
+                flex-wrap: wrap; */
             width: 500px;
             margin-bottom: 20px;
             /* margin-left: 50px; */
@@ -866,7 +878,8 @@ footer .footer-bottom ul {
     .donate-side-img {
         /* border: solid red; */
         /* flex-direction: column; */
-        display: block !important;
+        /* display: block !important; */
+        display: flex column;
 
     }
     .three-boxes {

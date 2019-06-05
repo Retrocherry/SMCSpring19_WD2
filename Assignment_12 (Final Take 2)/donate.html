@@ -191,7 +191,7 @@
 
                             <label for="state" class="form-info">State</label>
                             <select class="select-state" id="state" name="billing.address.state" aria-required="true">
-                                <option value="0"></option>
+                                <option value=''>State</option>
                                 <option value="None">None</option>
                                 <option value="AK">AK</option>
                                 <option value="AL">AL</option>
@@ -278,7 +278,7 @@
                             <label for="country" class="form-info">Country</label>
                             <select class="select-country" id="country" name="billing.address.country"
                                 aria-required="true">
-                                <option value="0"></option>
+                                <option value=''>Country</option>
                                 <option value="None">None</option>
                                 <option value="United States">United States</option>
                                 <option value="United Kingdom">United Kingdom</option>
@@ -565,7 +565,7 @@
                             <input type="radio" name="radAnswer" id="paypal" placeholder="Credit/Debit"
                                 class="donor-info-input">
 
-                            <label for="amazon"> <img src="/images/icons/fb.png" class="form-info">Amazon Pay </label>
+                            <label for="amazon" class="form-info">Amazon Pay </label>
                             <input type="radio" name="radAnswer" id="amazon" placeholder="Credit/Debit"
                                 class="donor-info-input">
                         </div>
@@ -575,20 +575,39 @@
                             <input type="text" id="f-cc" placeholder="Credit Card Number" class="donor-info-input">
 
 
-                            <label for="country" class="form-info">Exp Date</label>
+                            <label for="country" class="form-info">Exp Month</label>
                             <select class="select-month" id="country" name="billing.address.country"
                                 aria-required="true">
-                                <option value="0"></option>
-                                <option value="None">None</option>
-                                <option value="United States">United States</option>
-
-                                <label for="country" class="form-info">Exp Date</label>
-                                <select class="select-year" id="year" name="creditcard.date" aria-required="true">
+                                <option value=''>Month</option>
+                                <option value='01'>1 January</option>
+                                <option value='02'>2 February</option>
+                                <option value='03'>3 March</option>
+                                <option value='04'>4 April</option>
+                                <option value='05'>5 May</option>
+                                <option value='06'>6 June</option>
+                                <option value='07'>7 July</option>
+                                <option value='08'>8 August</option>
+                                <option value='09'>9 September</option>
+                                <option value='10'>10 October</option>
+                                <option value='11'>11 November</option>
+                                <option value='12'>12 December</option>
+                            
+                            </select>
+                                <label for="year" class="form-info">Year</label>
+                                <select class="select-year" id="year" name="creditcard.year" aria-required="true">
+                                    <option value="">Year</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2022">2023</option>
+                                   </select>
+                                    <!-- <label for="year" class="form-info">Exp Month</label>
+                                <select class="select-month" id="month" name="creditcard.month" aria-required="true">
                                     <option value="0"></option>
                                     <option value="None"></option>
-                                    <option value="United States"></option>
+                                    <option value="United States"></option> -->
 
-
+                                   
 
                         </div>
 
@@ -608,10 +627,10 @@
             </div>
 
             <div class="donate-side-img">
-                <img src="images/logo-2.png" alt="">
+                <!-- <img src="images/logo-2.png" alt=""> -->
                 <img src="images/donate/smallBBBlogo.gif" alt="">
 
-                
+
 
 
             </div>
